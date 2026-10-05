@@ -3,7 +3,7 @@
 
   const DOW_LABEL = { 'Пн': 'Понеделник', 'Вт': 'Вторник', 'Ср': 'Сряда', 'Чт': 'Четвъртък', 'Пт': 'Петък', 'Сб': 'Събота' };
   const GROUP_OPTIONS = ['201А', '201Б', '202А', '202Б', '203'];
-  const DEFAULT_GROUPS = ['201А', '201Б'];
+  const DEFAULT_GROUPS = GROUP_OPTIONS.slice(); // all groups shown until the user narrows it down
 
   const state = {
     data: null,
@@ -24,7 +24,8 @@
   const els = {
     groupToggle: document.getElementById('groupToggle'),
     viewRoot: document.getElementById('viewRoot'),
-    todayBtn: document.getElementById('todayBtn'),
+    bottomFab: document.getElementById('bottomFab'),
+    todayFab: document.getElementById('todayFab'),
     footerNote: document.getElementById('footerNote'),
     sourceLink: document.getElementById('sourceLink'),
     menuToggle: document.getElementById('menuToggle'),
@@ -122,9 +123,12 @@
     return el;
   }
 
-  let todayDayEl = null;
+  // The day we auto-jump to on load and that the "Днес" button returns to:
+  // today itself, or if nothing is scheduled today, the nearest upcoming
+  // day (or the most recent past day if the semester is already over).
+  let anchorDayEl = null;
 
-  function renderList() {
+  function renderList(isInitial) {
     const events = state.data.events
       .filter(eventMatchesSelection)
       .sort((a, b) => a.date.localeCompare(b.date) || a.start.localeCompare(b.start));
@@ -138,15 +142,14 @@
     const list = document.createElement('div');
     list.className = 'agenda-list';
     const today = todayISO();
-    todayDayEl = null;
-    let scrollTarget = null;
+    anchorDayEl = null;
 
     for (const [date, dayEvents] of byDate) {
       const dayEl = document.createElement('div');
       dayEl.className = 'agenda-day' + (date === today ? ' is-today' : '');
       dayEl.dataset.date = date;
-      if (date === today) todayDayEl = dayEl;
-      if (date >= today && !scrollTarget) scrollTarget = dayEl;
+      if (date === today) anchorDayEl = dayEl;
+      if (date >= today && !anchorDayEl) anchorDayEl = dayEl;
 
       const d = new Date(date + 'T00:00:00');
       const dowShort = ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'][d.getDay()];
@@ -162,6 +165,7 @@
 
       list.appendChild(dayEl);
     }
+    if (!anchorDayEl) anchorDayEl = list.lastElementChild; // semester is over — anchor to the last day
 
     els.viewRoot.innerHTML = '';
     if (events.length === 0) {
@@ -169,14 +173,14 @@
       return;
     }
     els.viewRoot.appendChild(list);
-    if (scrollTarget) {
-      setTimeout(() => jumpToElement(scrollTarget), 0);
+    if (isInitial) {
+      setTimeout(() => jumpToElement(anchorDayEl), 0);
     }
   }
 
-  // `scrollIntoView({behavior:'smooth'})` is unreliable in some embedded
-  // WebViews, so we jump directly using the same offset math scroll-margin
-  // would apply — simple and works everywhere.
+  // Jump instantly to an element, landing just below the sticky header.
+  // (`scrollIntoView({behavior:'smooth'})` is unreliable in some embedded
+  // WebViews, so this does the offset math itself.)
   function jumpToElement(el) {
     if (!el) return;
     const headerH = document.querySelector('.topbar').offsetHeight;
@@ -184,17 +188,28 @@
     window.scrollTo(0, Math.max(0, targetY));
   }
 
-  function scrollToToday() {
-    if (todayDayEl) {
-      jumpToElement(todayDayEl);
-      return;
-    }
-    // No events today — find the nearest upcoming (or most recent past) day and jump there.
-    const today = todayISO();
-    const days = Array.from(document.querySelectorAll('.agenda-day'));
-    const target = days.find(d => d.dataset.date >= today) || days[days.length - 1];
-    jumpToElement(target);
+  // The two floating buttons (jump-to-bottom, jump-to-today) appear while
+  // the page is being scrolled and for ~3s after it stops, then fade out.
+  // They stay suppressed until the user actually touches/scrolls the page
+  // themselves, so the initial automatic jump-to-today on load (and any
+  // late layout shift, e.g. from web fonts swapping in) never triggers them.
+  let userHasInteracted = false;
+  let scrollHideTimer = null;
+  function showScrollButtons() {
+    els.bottomFab.classList.add('show');
+    els.todayFab.classList.add('show');
+    clearTimeout(scrollHideTimer);
+    scrollHideTimer = setTimeout(() => {
+      els.bottomFab.classList.remove('show');
+      els.todayFab.classList.remove('show');
+    }, 3000);
   }
+  ['wheel', 'touchstart', 'pointerdown', 'keydown'].forEach(type => {
+    window.addEventListener(type, () => { userHasInteracted = true; }, { passive: true, once: true });
+  });
+  window.addEventListener('scroll', () => {
+    if (userHasInteracted) showScrollButtons();
+  }, { passive: true });
 
   function renderGroupToggle() {
     els.groupToggle.innerHTML = '';
@@ -218,7 +233,7 @@
     }
     saveSelectedGroups();
     renderGroupToggle();
-    renderList();
+    renderList(false);
   }
 
   function init() {
@@ -231,10 +246,10 @@
         state.data = data;
         updateHeaderHeightVar();
         renderGroupToggle();
-        renderList();
+        renderList(true);
 
         const gen = new Date(data.meta.generatedAt);
-        els.footerNote.textContent = `${data.meta.specialty} · ${data.meta.semester} · данните са обновени на ${gen.toLocaleDateString('bg-BG')}`;
+        els.footerNote.innerHTML = `${data.meta.specialty} · ${data.meta.semester}<br>данните са обновени на ${gen.toLocaleDateString('bg-BG')}`;
         if (data.meta.sourceUrl) els.sourceLink.href = data.meta.sourceUrl;
       })
       .catch(err => {
@@ -245,17 +260,27 @@
       });
   }
 
-  els.todayBtn.addEventListener('click', scrollToToday);
+  els.bottomFab.addEventListener('click', () => window.scrollTo(0, document.body.scrollHeight));
+  els.todayFab.addEventListener('click', () => jumpToElement(anchorDayEl));
 
   els.menuToggle.addEventListener('click', () => {
     const open = els.controlsPanel.classList.toggle('open');
     els.menuToggle.setAttribute('aria-expanded', String(open));
+    updateHeaderHeightVar(); // opening/closing the mobile menu changes the header's height
   });
 
+  const isLocalDev = ['localhost', '127.0.0.1'].includes(location.hostname);
   if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('sw.js').catch(() => { /* offline install not critical */ });
-    });
+    if (isLocalDev) {
+      // Never run the SW in local dev — a stale cached app.js/style.css from
+      // an earlier test would otherwise keep being served over new edits.
+      navigator.serviceWorker.getRegistrations().then(regs => regs.forEach(r => r.unregister()));
+      if (window.caches) caches.keys().then(keys => keys.forEach(k => caches.delete(k)));
+    } else {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(() => { /* offline install not critical */ });
+      });
+    }
   }
 
   init();

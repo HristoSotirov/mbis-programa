@@ -48,10 +48,6 @@
     </div>
   </header>
 
-  <nav class="top-nav">
-    <button id="todayBtn" class="today-btn" type="button">Към днес</button>
-  </nav>
-
   <main id="viewRoot" class="view-root">
     <!-- rendered by app.js -->
   </main>
@@ -62,6 +58,12 @@
   </footer>
 
 </div>
+
+<button id="todayFab" class="today-fab" type="button">Днес</button>
+
+<button id="bottomFab" class="bottom-fab" type="button" aria-label="Най-долу">
+  <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 4v14M6 12l6 6 6-6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
 
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 

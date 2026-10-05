@@ -189,6 +189,10 @@ const WEEKS = weeksPathArg && fs.existsSync(weeksPathArg)
 const DAY_NAMES = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
 const DAY_OFFSET = { 'Пн': 0, 'Вт': 1, 'Ср': 2, 'Чт': 3, 'Пт': 4, 'Сб': 5 };
 const ACADEMIC_HOUR_MIN = 45;
+const BREAK_MIN = 15; // between consecutive academic hours within the same block (not after the last one)
+function blockDurationMin(hours) {
+  return hours * ACADEMIC_HOUR_MIN + Math.max(0, hours - 1) * BREAK_MIN;
+}
 
 function addDays(isoDate, n) {
   const d = new Date(isoDate + 'T00:00:00Z');
@@ -251,7 +255,7 @@ for (const row of rows) {
     for (const { day, hours } of parseWeekCell(cellText)) {
       const date = addDays(wk.start, DAY_OFFSET[day]);
       const start = day === 'Сб' ? row.saturday_start : row.weekday_start;
-      const end = addMinutes(start, hours * ACADEMIC_HOUR_MIN);
+      const end = addMinutes(start, blockDurationMin(hours));
       events.push({
         id: eventId++, week: wk.n, date, day, start, end, hours,
         no, subject, type: row.type, teacher: row.teacher,
@@ -272,7 +276,7 @@ const out = {
   meta: {
     specialty: 'МБИС', semester: 'Зимен семестър 2026/2027',
     sourceUrl: process.env.SCHEDULE_SOURCE_URL || DEFAULT_SOURCE_URL,
-    generatedAt: new Date().toISOString(), academicHourMinutes: ACADEMIC_HOUR_MIN,
+    generatedAt: new Date().toISOString(), academicHourMinutes: ACADEMIC_HOUR_MIN, breakMinutes: BREAK_MIN,
   },
   weeks: WEEKS, groups: allGroups, courses, events,
 };

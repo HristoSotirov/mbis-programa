@@ -23,15 +23,46 @@ jobs:
       - name: Install poppler-utils
         run: sudo apt-get update -y && sudo apt-get install -y poppler-utils
 
+      - name: Resolve the current schedule PDF URL via the tu-sofia.bg schedules API
+        id: resolve
+        run: |
+          set +e
+          curl -sL "https://tu-sofia.bg/api/schedules?degree_type=master&per_page=50&type=lectures&faculty=faculty-of-economics" \
+            -H "Accept: application/json" -o /tmp/schedules-api.json
+          RESOLVED=$(node -e "
+            try {
+              const data = require('/tmp/schedules-api.json');
+              const entry = (data.data && data.data.data || []).find(e =>
+                e.major && e.major.slug === '$MAJOR_SLUG' && e.semester === '$SEMESTER'
+              );
+              if (entry && entry.file_path) console.log(entry.file_path);
+            } catch (e) { /* fall through to the empty-output fallback below */ }
+          ")
+          if [ -n "$RESOLVED" ]; then
+            echo "Resolved via API: $RESOLVED"
+            echo "url=$RESOLVED" >> "$GITHUB_OUTPUT"
+            echo "used_fallback=0" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::Could not resolve the schedule URL via the tu-sofia.bg API (site layout may have changed) — falling back to the last known direct link."
+            echo "url=$FALLBACK_URL" >> "$GITHUB_OUTPUT"
+            echo "used_fallback=1" >> "$GITHUB_OUTPUT"
+          fi
+        env:
+          MAJOR_SLUG: menidzhmant-i-biznes-informatsionni-sistemi
+          SEMESTER: winter
+          FALLBACK_URL: ${{ vars.SCHEDULE_PDF_URL || 'https://tu-sofia.bg/api/documents/download?path=schedules%2F33NKmaZZD4fIaxF6UXfHxqwCfvh5hvhsWgNrI4m2.pdf&locale=bg' }}
+
       - name: Download current schedule PDF from tu-sofia.bg
         run: |
           curl -sL -o /tmp/schedule.pdf "$SCHEDULE_URL"
           test -s /tmp/schedule.pdf
         env:
-          SCHEDULE_URL: ${{ vars.SCHEDULE_PDF_URL || 'https://tu-sofia.bg/api/documents/download?path=schedules%2F33NKmaZZD4fIaxF6UXfHxqwCfvh5hvhsWgNrI4m2.pdf&locale=bg' }}
+          SCHEDULE_URL: ${{ steps.resolve.outputs.url }}
 
       - name: Parse PDF into events.json
         run: node scripts/parse-schedule.js /tmp/schedule.pdf /tmp/events.new.json
+        env:
+          SCHEDULE_SOURCE_URL: ${{ steps.resolve.outputs.url }}
 
       - name: Compare against committed data (ignoring timestamp)
         id: diff
@@ -64,11 +95,14 @@ jobs:
             Автоматичната проверка откри промяна в изходния PDF на tu-sofia.bg
             спрямо текущо публикуваните данни.
 
+            Източник: ${{ steps.resolve.outputs.url }}
+            ${{ steps.resolve.outputs.used_fallback == '1' && '⚠️ **Внимание:** сайтът на ТУ-София не върна очаквания отговор от schedules API-то, затова е използван последният известен линк като резервен вариант. Провери дали той все още сочи към правилния, актуален файл.' || '' }}
+
             **Нищо не се публикува автоматично.** Прегледай разликите по-долу
             (най-вече в `public/data/events.json`) и **merge-ни този PR**, за
             да може новата версия да излезе на сайта. Ако промяната изглежда
             като грешка в автоматичното разпознаване на таблицата, затвори PR-а
             без merge.
 
-            Изтеглен снимка на PDF-а е добавена в `snapshots/` за справка.
+            Изтеглена снимка на PDF-а е добавена в `snapshots/` за справка.
           labels: schedule-update

@@ -1,14 +1,13 @@
 (function () {
   'use strict';
 
-  const DOW_SHORT_ORDER = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
+  const DOW_LABEL = { 'Пн': 'Понеделник', 'Вт': 'Вторник', 'Ср': 'Сряда', 'Чт': 'Четвъртък', 'Пт': 'Петък', 'Сб': 'Събота' };
   const GROUP_OPTIONS = ['201А', '201Б', '202А', '202Б', '203'];
   const DEFAULT_GROUPS = ['201А', '201Б'];
 
   const state = {
     data: null,
     selectedGroups: loadSelectedGroups(),
-    weekIndex: 0, // index into data.weeks
   };
 
   function loadSelectedGroups() {
@@ -25,14 +24,9 @@
   const els = {
     groupToggle: document.getElementById('groupToggle'),
     viewRoot: document.getElementById('viewRoot'),
-    weekTitle: document.getElementById('weekTitle'),
-    weekRange: document.getElementById('weekRange'),
-    prevWeek: document.getElementById('prevWeek'),
-    nextWeek: document.getElementById('nextWeek'),
     todayBtn: document.getElementById('todayBtn'),
     footerNote: document.getElementById('footerNote'),
     sourceLink: document.getElementById('sourceLink'),
-    toast: document.getElementById('toast'),
     menuToggle: document.getElementById('menuToggle'),
     controlsPanel: document.getElementById('controlsPanel'),
   };
@@ -42,10 +36,12 @@
     return m ? m[1] : g;
   }
 
-  function fmtDateHuman(iso) {
-    const d = new Date(iso + 'T00:00:00');
-    return d.toLocaleDateString('bg-BG', { day: '2-digit', month: '2-digit' });
+  function updateHeaderHeightVar() {
+    const h = document.querySelector('.topbar').offsetHeight;
+    document.documentElement.style.setProperty('--header-h', h + 'px');
   }
+  window.addEventListener('resize', updateHeaderHeightVar);
+  window.addEventListener('load', updateHeaderHeightVar);
 
   function todayISO() {
     const d = new Date();
@@ -68,13 +64,6 @@
       const p = parentGroup(g);
       return ev.groupTokens.includes(g) || ev.groupTokens.includes(p);
     });
-  }
-
-  function currentWeekEvents() {
-    const wk = state.data.weeks[state.weekIndex];
-    return state.data.events
-      .filter(ev => ev.week === wk.n && eventMatchesSelection(ev))
-      .sort((a, b) => a.date.localeCompare(b.date) || a.start.localeCompare(b.start));
   }
 
   function eventCard(ev) {
@@ -126,50 +115,6 @@
     return card;
   }
 
-  function renderWeekView() {
-    const wk = state.data.weeks[state.weekIndex];
-    const events = currentWeekEvents();
-    const byDate = new Map();
-    for (const ev of events) {
-      if (!byDate.has(ev.date)) byDate.set(ev.date, []);
-      byDate.get(ev.date).push(ev);
-    }
-
-    const grid = document.createElement('div');
-    grid.className = 'week-grid';
-    const today = todayISO();
-
-    DOW_SHORT_ORDER.forEach((dow, i) => {
-      const date = addDaysISO(wk.start, i);
-      const col = document.createElement('div');
-      col.className = 'day-col' + (date === today ? ' is-today' : '');
-
-      const head = document.createElement('div');
-      head.className = 'day-head';
-      const d = new Date(date + 'T00:00:00');
-      head.innerHTML = `<div class="dow">${dow}</div><div class="dnum">${d.getDate()}.${String(d.getMonth()+1).padStart(2,'0')}</div>`;
-      col.appendChild(head);
-
-      const dayEvents = (byDate.get(date) || []);
-      if (dayEvents.length === 0) {
-        const empty = document.createElement('div');
-        empty.className = 'day-empty';
-        empty.textContent = '—';
-        col.appendChild(empty);
-      } else {
-        dayEvents.forEach(ev => col.appendChild(eventCard(ev)));
-      }
-      grid.appendChild(col);
-    });
-
-    els.viewRoot.innerHTML = '';
-    if (events.length === 0) {
-      els.viewRoot.appendChild(emptyState('Няма занятия тази седмица за избраните групи.'));
-    } else {
-      els.viewRoot.appendChild(grid);
-    }
-  }
-
   function emptyState(msg) {
     const el = document.createElement('div');
     el.className = 'empty-state';
@@ -177,35 +122,78 @@
     return el;
   }
 
-  function addDaysISO(iso, n) {
-    const d = new Date(iso + 'T00:00:00');
-    d.setDate(d.getDate() + n);
-    return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
-  }
+  let todayDayEl = null;
 
-  function updateWeekNav() {
-    const wk = state.data.weeks[state.weekIndex];
-    els.weekTitle.textContent = 'Седмица ' + wk.n;
-    const end = addDaysISO(wk.start, 5);
-    els.weekRange.textContent = fmtDateHuman(wk.start) + '–' + fmtDateHuman(end) + '.' + wk.start.slice(0, 4);
-    els.prevWeek.disabled = state.weekIndex === 0;
-    els.nextWeek.disabled = state.weekIndex === state.data.weeks.length - 1;
-  }
+  function renderList() {
+    const events = state.data.events
+      .filter(eventMatchesSelection)
+      .sort((a, b) => a.date.localeCompare(b.date) || a.start.localeCompare(b.start));
 
-  function render() {
-    updateWeekNav();
-    renderWeekView();
-  }
-
-  function findCurrentWeekIndex() {
-    const today = todayISO();
-    const weeks = state.data.weeks;
-    for (let i = 0; i < weeks.length; i++) {
-      const wkEnd = addDaysISO(weeks[i].start, 6);
-      if (today >= weeks[i].start && today < wkEnd) return i;
-      if (today < weeks[i].start) return i;
+    const byDate = new Map();
+    for (const ev of events) {
+      if (!byDate.has(ev.date)) byDate.set(ev.date, []);
+      byDate.get(ev.date).push(ev);
     }
-    return weeks.length - 1;
+
+    const list = document.createElement('div');
+    list.className = 'agenda-list';
+    const today = todayISO();
+    todayDayEl = null;
+    let scrollTarget = null;
+
+    for (const [date, dayEvents] of byDate) {
+      const dayEl = document.createElement('div');
+      dayEl.className = 'agenda-day' + (date === today ? ' is-today' : '');
+      dayEl.dataset.date = date;
+      if (date === today) todayDayEl = dayEl;
+      if (date >= today && !scrollTarget) scrollTarget = dayEl;
+
+      const d = new Date(date + 'T00:00:00');
+      const dowShort = ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'][d.getDay()];
+      const head = document.createElement('div');
+      head.className = 'agenda-day-head';
+      head.innerHTML = `<span class="wd">${DOW_LABEL[dowShort] || dowShort}</span><span>${d.getDate()}.${String(d.getMonth()+1).padStart(2,'0')}.${d.getFullYear()}</span>`;
+      dayEl.appendChild(head);
+
+      const evWrap = document.createElement('div');
+      evWrap.className = 'agenda-events';
+      dayEvents.forEach(ev => evWrap.appendChild(eventCard(ev)));
+      dayEl.appendChild(evWrap);
+
+      list.appendChild(dayEl);
+    }
+
+    els.viewRoot.innerHTML = '';
+    if (events.length === 0) {
+      els.viewRoot.appendChild(emptyState('Няма намерени занятия за избраните групи.'));
+      return;
+    }
+    els.viewRoot.appendChild(list);
+    if (scrollTarget) {
+      setTimeout(() => jumpToElement(scrollTarget), 0);
+    }
+  }
+
+  // `scrollIntoView({behavior:'smooth'})` is unreliable in some embedded
+  // WebViews, so we jump directly using the same offset math scroll-margin
+  // would apply — simple and works everywhere.
+  function jumpToElement(el) {
+    if (!el) return;
+    const headerH = document.querySelector('.topbar').offsetHeight;
+    const targetY = el.getBoundingClientRect().top + window.scrollY - (headerH + 10);
+    window.scrollTo(0, Math.max(0, targetY));
+  }
+
+  function scrollToToday() {
+    if (todayDayEl) {
+      jumpToElement(todayDayEl);
+      return;
+    }
+    // No events today — find the nearest upcoming (or most recent past) day and jump there.
+    const today = todayISO();
+    const days = Array.from(document.querySelectorAll('.agenda-day'));
+    const target = days.find(d => d.dataset.date >= today) || days[days.length - 1];
+    jumpToElement(target);
   }
 
   function renderGroupToggle() {
@@ -230,7 +218,7 @@
     }
     saveSelectedGroups();
     renderGroupToggle();
-    render();
+    renderList();
   }
 
   function init() {
@@ -241,9 +229,9 @@
       })
       .then(data => {
         state.data = data;
+        updateHeaderHeightVar();
         renderGroupToggle();
-        state.weekIndex = findCurrentWeekIndex();
-        render();
+        renderList();
 
         const gen = new Date(data.meta.generatedAt);
         els.footerNote.textContent = `${data.meta.specialty} · ${data.meta.semester} · данните са обновени на ${gen.toLocaleDateString('bg-BG')}`;
@@ -257,21 +245,18 @@
       });
   }
 
-  els.prevWeek.addEventListener('click', () => {
-    if (state.weekIndex > 0) { state.weekIndex--; render(); }
-  });
-  els.nextWeek.addEventListener('click', () => {
-    if (state.weekIndex < state.data.weeks.length - 1) { state.weekIndex++; render(); }
-  });
-  els.todayBtn.addEventListener('click', () => {
-    state.weekIndex = findCurrentWeekIndex();
-    render();
-  });
+  els.todayBtn.addEventListener('click', scrollToToday);
 
   els.menuToggle.addEventListener('click', () => {
     const open = els.controlsPanel.classList.toggle('open');
     els.menuToggle.setAttribute('aria-expanded', String(open));
   });
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').catch(() => { /* offline install not critical */ });
+    });
+  }
 
   init();
 })();

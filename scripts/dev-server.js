@@ -5,7 +5,10 @@ const path = require('path');
 const root = path.join(__dirname, '..', 'public');
 const port = process.env.PORT || 8080;
 
-const types = { '.html': 'text/html', '.js': 'application/javascript', '.css': 'text/css', '.json': 'application/json' };
+const types = {
+  '.html': 'text/html', '.js': 'application/javascript', '.css': 'text/css', '.json': 'application/json',
+  '.webmanifest': 'application/manifest+json', '.png': 'image/png',
+};
 
 http.createServer((req, res) => {
   let p = decodeURIComponent(req.url.split('?')[0]);

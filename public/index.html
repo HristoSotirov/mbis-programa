@@ -4,9 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Програма МБИС · ТУ-София</title>
-<meta name="description" content="Удобна седмична програма за специалност МБИС, ТУ-София — зимен семестър 2026/2027.">
+<meta name="description" content="Удобна програма за специалност МБИС, ТУ-София — зимен семестър 2026/2027.">
 <meta name="theme-color" content="#0f2a52">
-<link rel="icon" href="data:,">
+
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Програма МБИС">
+<meta name="mobile-web-app-capable" content="yes">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -19,15 +28,15 @@
   <header class="topbar">
     <div class="topbar-row">
       <div class="brand">
-        <img class="brand-logo" src="assets/tu-sofia-logo.png" alt="Технически университет — София">
+        <span class="brand-logo-box"><img class="brand-logo" src="assets/tu-sofia-logo.png" alt="Технически университет — София"></span>
         <div class="brand-text">
-          <strong>Програма МБИС <span class="unofficial-tag">неофициална</span></strong>
+          <strong>Програма МБИС</strong>
           <span id="semesterLabel">Зимен семестър 2026/2027</span>
         </div>
       </div>
 
       <button id="menuToggle" class="icon-btn only-mobile" aria-label="Настройки" aria-expanded="false">
-        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       </button>
     </div>
 
@@ -39,18 +48,8 @@
     </div>
   </header>
 
-  <nav class="week-nav">
-    <button id="prevWeek" class="nav-btn" aria-label="Предишна седмица">
-      <svg viewBox="0 0 24 24" width="20" height="20"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </button>
-    <div class="week-label">
-      <strong id="weekTitle">Седмица 1</strong>
-      <span id="weekRange">05–10.10.2026</span>
-    </div>
-    <button id="nextWeek" class="nav-btn" aria-label="Следваща седмица">
-      <svg viewBox="0 0 24 24" width="20" height="20"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </button>
-    <button id="todayBtn" class="today-btn" type="button">Днес</button>
+  <nav class="top-nav">
+    <button id="todayBtn" class="today-btn" type="button">Към днес</button>
   </nav>
 
   <main id="viewRoot" class="view-root">

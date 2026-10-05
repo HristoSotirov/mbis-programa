@@ -23,6 +23,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Stamp service worker with this deploy's version
+        run: sed -i "s/__BUILD_ID__/${GITHUB_SHA}-$(date -u +%Y%m%d%H%M%S)/" public/sw.js
+
       - name: Upload site as Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

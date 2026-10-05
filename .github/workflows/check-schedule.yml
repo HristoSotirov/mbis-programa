@@ -1,0 +1,74 @@
+name: Check source schedule for changes
+
+on:
+  schedule:
+    # 06:15 and 18:15 Sofia time (UTC+2/+3) — twice a day
+    - cron: '15 4,16 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install poppler-utils
+        run: sudo apt-get update -y && sudo apt-get install -y poppler-utils
+
+      - name: Download current schedule PDF from tu-sofia.bg
+        run: |
+          curl -sL -o /tmp/schedule.pdf "$SCHEDULE_URL"
+          test -s /tmp/schedule.pdf
+        env:
+          SCHEDULE_URL: ${{ vars.SCHEDULE_PDF_URL || 'https://tu-sofia.bg/api/documents/download?path=schedules%2F33NKmaZZD4fIaxF6UXfHxqwCfvh5hvhsWgNrI4m2.pdf&locale=bg' }}
+
+      - name: Parse PDF into events.json
+        run: node scripts/parse-schedule.js /tmp/schedule.pdf /tmp/events.new.json
+
+      - name: Compare against committed data (ignoring timestamp)
+        id: diff
+        run: |
+          node -e "
+            const fs = require('fs');
+            const strip = p => { const d = JSON.parse(fs.readFileSync(p)); delete d.meta.generatedAt; return JSON.stringify(d); };
+            const a = strip('public/data/events.json');
+            const b = strip('/tmp/events.new.json');
+            fs.writeFileSync('/tmp/changed', a === b ? '0' : '1');
+          "
+          echo "changed=$(cat /tmp/changed)" >> "$GITHUB_OUTPUT"
+
+      - name: Stage updated data + raw PDF snapshot
+        if: steps.diff.outputs.changed == '1'
+        run: |
+          cp /tmp/events.new.json public/data/events.json
+          mkdir -p snapshots
+          cp /tmp/schedule.pdf "snapshots/schedule-$(date +%F).pdf"
+
+      - name: Open pull request for review
+        if: steps.diff.outputs.changed == '1'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: 'data: обновен разпис от tu-sofia.bg'
+          branch: schedule-update
+          delete-branch: true
+          title: '📅 Открита промяна в официалния разпис'
+          body: |
+            Автоматичната проверка откри промяна в изходния PDF на tu-sofia.bg
+            спрямо текущо публикуваните данни.
+
+            **Нищо не се публикува автоматично.** Прегледай разликите по-долу
+            (най-вече в `public/data/events.json`) и **merge-ни този PR**, за
+            да може новата версия да излезе на сайта. Ако промяната изглежда
+            като грешка в автоматичното разпознаване на таблицата, затвори PR-а
+            без merge.
+
+            Изтеглен снимка на PDF-а е добавена в `snapshots/` за справка.
+          labels: schedule-update

@@ -249,7 +249,7 @@
         renderList(true);
 
         const gen = new Date(data.meta.generatedAt);
-        els.footerNote.innerHTML = `${data.meta.specialty} · ${data.meta.semester}<br>данните са обновени на ${gen.toLocaleDateString('bg-BG')}`;
+        els.footerNote.innerHTML = `${data.meta.specialty} · ${data.meta.semester}<br>Данните са обновени на ${gen.toLocaleDateString('bg-BG')}`;
         if (data.meta.sourceUrl) els.sourceLink.href = data.meta.sourceUrl;
       })
       .catch(err => {

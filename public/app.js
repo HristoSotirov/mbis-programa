@@ -1,20 +1,29 @@
 (function () {
   'use strict';
 
-  const DOW_LABEL = { 'Пн': 'Понеделник', 'Вт': 'Вторник', 'Ср': 'Сряда', 'Чт': 'Четвъртък', 'Пт': 'Петък', 'Сб': 'Събота' };
   const DOW_SHORT_ORDER = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
+  const GROUP_OPTIONS = ['201А', '201Б', '202А', '202Б', '203'];
+  const DEFAULT_GROUPS = ['201А', '201Б'];
 
   const state = {
     data: null,
-    group: localStorage.getItem('mbis.group') || '201',
-    showAll: localStorage.getItem('mbis.showAll') === '1',
-    view: localStorage.getItem('mbis.view') || 'week',
+    selectedGroups: loadSelectedGroups(),
     weekIndex: 0, // index into data.weeks
   };
 
+  function loadSelectedGroups() {
+    try {
+      const raw = JSON.parse(localStorage.getItem('mbis.groups'));
+      if (Array.isArray(raw) && raw.length && raw.every(g => GROUP_OPTIONS.includes(g))) return raw;
+    } catch (e) { /* ignore */ }
+    return DEFAULT_GROUPS.slice();
+  }
+  function saveSelectedGroups() {
+    localStorage.setItem('mbis.groups', JSON.stringify(state.selectedGroups));
+  }
+
   const els = {
-    groupSelect: document.getElementById('groupSelect'),
-    showAllCheckbox: document.getElementById('showAllCheckbox'),
+    groupToggle: document.getElementById('groupToggle'),
     viewRoot: document.getElementById('viewRoot'),
     weekTitle: document.getElementById('weekTitle'),
     weekRange: document.getElementById('weekRange'),
@@ -22,10 +31,10 @@
     nextWeek: document.getElementById('nextWeek'),
     todayBtn: document.getElementById('todayBtn'),
     footerNote: document.getElementById('footerNote'),
+    sourceLink: document.getElementById('sourceLink'),
     toast: document.getElementById('toast'),
     menuToggle: document.getElementById('menuToggle'),
     controlsPanel: document.getElementById('controlsPanel'),
-    toggleBtns: Array.from(document.querySelectorAll('.toggle-btn')),
   };
 
   function parentGroup(g) {
@@ -54,20 +63,21 @@
     return c;
   }
 
-  function eventMatchesGroup(ev, group) {
-    if (state.showAll) return true;
-    const p = parentGroup(group);
-    return ev.groupTokens.includes(group) || ev.groupTokens.includes(p);
+  function eventMatchesSelection(ev) {
+    return state.selectedGroups.some(g => {
+      const p = parentGroup(g);
+      return ev.groupTokens.includes(g) || ev.groupTokens.includes(p);
+    });
   }
 
   function currentWeekEvents() {
     const wk = state.data.weeks[state.weekIndex];
     return state.data.events
-      .filter(ev => ev.week === wk.n && eventMatchesGroup(ev, state.group))
+      .filter(ev => ev.week === wk.n && eventMatchesSelection(ev))
       .sort((a, b) => a.date.localeCompare(b.date) || a.start.localeCompare(b.start));
   }
 
-  function eventCard(ev, { compact } = {}) {
+  function eventCard(ev) {
     const card = document.createElement('div');
     card.className = 'event-card';
     card.style.setProperty('--course-color', colorForSubject(ev.subject));
@@ -98,27 +108,18 @@
     roomSpan.textContent = '📍 ' + (ev.room || '—');
     meta.appendChild(roomSpan);
 
-    if (ev.groupTokens.length > 1) {
-      const multi = document.createElement('span');
-      multi.className = 'event-multigroup';
-      multi.textContent = 'общо: ' + ev.group;
-      meta.appendChild(multi);
-    } else if (state.showAll) {
-      const g = document.createElement('span');
-      g.className = 'event-group-tag';
-      g.textContent = 'гр. ' + ev.group;
-      meta.appendChild(g);
-    }
+    const groupBadge = document.createElement('span');
+    groupBadge.className = 'event-group-badge';
+    groupBadge.textContent = ev.group;
+    meta.appendChild(groupBadge);
 
     body.appendChild(meta);
 
-    if (!compact) {
-      const teacher = document.createElement('div');
-      teacher.className = 'event-sub';
-      teacher.style.marginTop = '4px';
-      teacher.textContent = ev.teacher;
-      body.appendChild(teacher);
-    }
+    const teacher = document.createElement('div');
+    teacher.className = 'event-sub';
+    teacher.style.marginTop = '4px';
+    teacher.textContent = ev.teacher;
+    body.appendChild(teacher);
 
     card.appendChild(time);
     card.appendChild(body);
@@ -163,56 +164,9 @@
 
     els.viewRoot.innerHTML = '';
     if (events.length === 0) {
-      els.viewRoot.appendChild(emptyState('Няма занятия тази седмица за избраната група.'));
+      els.viewRoot.appendChild(emptyState('Няма занятия тази седмица за избраните групи.'));
     } else {
       els.viewRoot.appendChild(grid);
-    }
-  }
-
-  function renderAgendaView() {
-    const events = state.data.events
-      .filter(ev => eventMatchesGroup(ev, state.group))
-      .sort((a, b) => a.date.localeCompare(b.date) || a.start.localeCompare(b.start));
-
-    const byDate = new Map();
-    for (const ev of events) {
-      if (!byDate.has(ev.date)) byDate.set(ev.date, []);
-      byDate.get(ev.date).push(ev);
-    }
-
-    const list = document.createElement('div');
-    list.className = 'agenda-list';
-    const today = todayISO();
-    let scrollTarget = null;
-
-    for (const [date, dayEvents] of byDate) {
-      const dayEl = document.createElement('div');
-      dayEl.className = 'agenda-day' + (date === today ? ' is-today' : '');
-      if (date >= today && !scrollTarget) scrollTarget = dayEl;
-
-      const d = new Date(date + 'T00:00:00');
-      const dowShort = DOW_SHORT_ORDER[(d.getDay() + 6) % 7];
-      const head = document.createElement('div');
-      head.className = 'agenda-day-head';
-      head.innerHTML = `<span class="wd">${DOW_LABEL[dowShort]}</span><span>${d.getDate()}.${String(d.getMonth()+1).padStart(2,'0')}.${d.getFullYear()}</span>`;
-      dayEl.appendChild(head);
-
-      const evWrap = document.createElement('div');
-      evWrap.className = 'agenda-events';
-      dayEvents.forEach(ev => evWrap.appendChild(eventCard(ev, { compact: true })));
-      dayEl.appendChild(evWrap);
-
-      list.appendChild(dayEl);
-    }
-
-    els.viewRoot.innerHTML = '';
-    if (events.length === 0) {
-      els.viewRoot.appendChild(emptyState('Няма намерени занятия за избраната група.'));
-    } else {
-      els.viewRoot.appendChild(list);
-      if (scrollTarget) {
-        requestAnimationFrame(() => scrollTarget.scrollIntoView({ block: 'start' }));
-      }
     }
   }
 
@@ -239,14 +193,8 @@
   }
 
   function render() {
-    if (state.view === 'week') {
-      document.querySelector('.week-nav').style.display = '';
-      updateWeekNav();
-      renderWeekView();
-    } else {
-      document.querySelector('.week-nav').style.display = 'none';
-      renderAgendaView();
-    }
+    updateWeekNav();
+    renderWeekView();
   }
 
   function findCurrentWeekIndex() {
@@ -260,29 +208,28 @@
     return weeks.length - 1;
   }
 
-  function showToast(msg) {
-    els.toast.textContent = msg;
-    els.toast.classList.add('show');
-    clearTimeout(showToast._t);
-    showToast._t = setTimeout(() => els.toast.classList.remove('show'), 3200);
-  }
-
-  function populateGroupSelect() {
-    els.groupSelect.innerHTML = '';
-    state.data.groups.forEach(g => {
-      const opt = document.createElement('option');
-      opt.value = g;
-      opt.textContent = 'Група ' + g;
-      els.groupSelect.appendChild(opt);
+  function renderGroupToggle() {
+    els.groupToggle.innerHTML = '';
+    GROUP_OPTIONS.forEach(g => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'group-chip' + (state.selectedGroups.includes(g) ? ' active' : '');
+      btn.textContent = g;
+      btn.addEventListener('click', () => toggleGroup(g));
+      els.groupToggle.appendChild(btn);
     });
-    if (!state.data.groups.includes(state.group)) state.group = state.data.groups[0];
-    els.groupSelect.value = state.group;
   }
 
-  function setView(view) {
-    state.view = view;
-    localStorage.setItem('mbis.view', view);
-    els.toggleBtns.forEach(b => b.classList.toggle('active', b.dataset.view === view));
+  function toggleGroup(g) {
+    const idx = state.selectedGroups.indexOf(g);
+    if (idx >= 0) {
+      if (state.selectedGroups.length === 1) return; // keep at least one selected
+      state.selectedGroups.splice(idx, 1);
+    } else {
+      state.selectedGroups.push(g);
+    }
+    saveSelectedGroups();
+    renderGroupToggle();
     render();
   }
 
@@ -294,36 +241,21 @@
       })
       .then(data => {
         state.data = data;
-        populateGroupSelect();
-        els.showAllCheckbox.checked = state.showAll;
+        renderGroupToggle();
         state.weekIndex = findCurrentWeekIndex();
-        setView(state.view);
         render();
 
         const gen = new Date(data.meta.generatedAt);
         els.footerNote.textContent = `${data.meta.specialty} · ${data.meta.semester} · данните са обновени на ${gen.toLocaleDateString('bg-BG')}`;
+        if (data.meta.sourceUrl) els.sourceLink.href = data.meta.sourceUrl;
       })
       .catch(err => {
         els.viewRoot.innerHTML = '';
-        els.viewRoot.appendChild(emptyState('Неуспешно зареждане на разписа. Опитайте да презаредите страницата.'));
+        els.viewRoot.appendChild(emptyState('Неуспешно зареждане на програмата. Опитайте да презаредите страницата.'));
         els.footerNote.textContent = 'Грешка при зареждане на данните.';
         console.error(err);
       });
   }
-
-  els.groupSelect.addEventListener('change', () => {
-    state.group = els.groupSelect.value;
-    localStorage.setItem('mbis.group', state.group);
-    render();
-  });
-
-  els.showAllCheckbox.addEventListener('change', () => {
-    state.showAll = els.showAllCheckbox.checked;
-    localStorage.setItem('mbis.showAll', state.showAll ? '1' : '0');
-    render();
-  });
-
-  els.toggleBtns.forEach(btn => btn.addEventListener('click', () => setView(btn.dataset.view)));
 
   els.prevWeek.addEventListener('click', () => {
     if (state.weekIndex > 0) { state.weekIndex--; render(); }
@@ -332,7 +264,6 @@
     if (state.weekIndex < state.data.weeks.length - 1) { state.weekIndex++; render(); }
   });
   els.todayBtn.addEventListener('click', () => {
-    if (state.view !== 'week') setView('week');
     state.weekIndex = findCurrentWeekIndex();
     render();
   });

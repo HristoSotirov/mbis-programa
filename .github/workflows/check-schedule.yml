@@ -56,10 +56,10 @@ jobs:
         if: steps.diff.outputs.changed == '1'
         uses: peter-evans/create-pull-request@v6
         with:
-          commit-message: 'data: обновен разпис от tu-sofia.bg'
+          commit-message: 'data: обновена програма от tu-sofia.bg'
           branch: schedule-update
           delete-branch: true
-          title: '📅 Открита промяна в официалния разпис'
+          title: '📅 Открита промяна в официалната програма'
           body: |
             Автоматичната проверка откри промяна в изходния PDF на tu-sofia.bg
             спрямо текущо публикуваните данни.

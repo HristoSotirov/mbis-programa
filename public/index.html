@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Разпис МБИС · ТУ-София</title>
-<meta name="description" content="Удобен седмичен разпис за специалност МБИС, ТУ-София — зимен семестър 2026/2027.">
+<title>Програма МБИС · ТУ-София</title>
+<meta name="description" content="Удобна седмична програма за специалност МБИС, ТУ-София — зимен семестър 2026/2027.">
 <meta name="theme-color" content="#0f2a52">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,9 +19,9 @@
   <header class="topbar">
     <div class="topbar-row">
       <div class="brand">
-        <span class="brand-mark">ТУ</span>
+        <img class="brand-logo" src="assets/tu-sofia-logo.png" alt="Технически университет — София">
         <div class="brand-text">
-          <strong>Разпис МБИС</strong>
+          <strong>Програма МБИС <span class="unofficial-tag">неофициална</span></strong>
           <span id="semesterLabel">Зимен семестър 2026/2027</span>
         </div>
       </div>
@@ -32,19 +32,9 @@
     </div>
 
     <div class="controls" id="controlsPanel">
-      <label class="field">
-        <span>Група</span>
-        <select id="groupSelect"></select>
-      </label>
-
-      <label class="field checkbox-field">
-        <input type="checkbox" id="showAllCheckbox">
-        <span>Покажи всички групи</span>
-      </label>
-
-      <div class="field view-toggle" role="group" aria-label="Изглед">
-        <button class="toggle-btn active" data-view="week" type="button">Седмица</button>
-        <button class="toggle-btn" data-view="agenda" type="button">Списък</button>
+      <div class="field">
+        <span>Групи</span>
+        <div class="group-toggle" id="groupToggle" role="group" aria-label="Избор на групи"></div>
       </div>
     </div>
   </header>
@@ -69,7 +59,7 @@
 
   <footer class="app-footer">
     <p id="footerNote">Зарежда…</p>
-    <p class="disclaimer">Неофициален изглед на публичния разпис на ТУ-София (специалност МБИС). При разминаване, официалният файл на tu-sofia.bg е меродавен. Крайните часове са пресметнати ориентировъчно (1 уч. час ≈ 45 мин.).</p>
+    <p class="source-line">Източник: <a id="sourceLink" href="#" target="_blank" rel="noopener">официалната програма на tu-sofia.bg</a></p>
   </footer>
 
 </div>

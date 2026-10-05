@@ -29,6 +29,32 @@ execFileSync('pdftotext', ['-bbox-layout', pdfPath, bboxPath]);
 const xml = fs.readFileSync(bboxPath, 'utf8');
 fs.unlinkSync(bboxPath);
 
+// Plain reading-order text, used to pick up the "room change" footnotes
+// printed below the table (e.g. "* Лекции в понеделник: зала 3401; в
+// останалите дни: 3501."). We resolve these into a concrete room per
+// weekday instead of showing the raw "3401/3501*" to the user.
+const plainText = execFileSync('pdftotext', [pdfPath, '-']).toString('utf8');
+const DAY_NAME_BG = { 'понеделник': 'Пн', 'вторник': 'Вт', 'сряда': 'Ср', 'четвъртък': 'Чт', 'петък': 'Пт', 'събота': 'Сб' };
+const roomRules = {}; // asterisk-count -> { specialDay, specialRoom, otherRoom }
+{
+  const footnoteRe = /(\*{1,4})\s*(?:Лекции|Лаб\.\s*упражнения)\s+(?:в|във)\s+(понеделник|вторник|сряда|четвъртък|петък|събота)[:\s]+(?:зала\s*)?([^\s;]+)\s*;\s*в\s+останалите\s+дни:\s*([^\s.]+)\.?/giu;
+  let fm;
+  while ((fm = footnoteRe.exec(plainText))) {
+    roomRules[fm[1].length] = { specialDay: DAY_NAME_BG[fm[2]], specialRoom: fm[3], otherRoom: fm[4] };
+  }
+}
+function resolveRoom(rawRoom, day) {
+  if (!rawRoom) return rawRoom;
+  const starMatch = rawRoom.match(/(\*{1,4})\s*$/);
+  if (!starMatch) return rawRoom;
+  const rule = roomRules[starMatch[1].length];
+  const base = rawRoom.slice(0, starMatch.index).trim();
+  if (!rule) return base; // unknown footnote marker — at least drop the stray asterisks
+  const tokens = base.split('/').map(s => s.trim());
+  if (!tokens.includes(rule.specialRoom) || !tokens.includes(rule.otherRoom)) return base;
+  return day === rule.specialDay ? rule.specialRoom : rule.otherRoom;
+}
+
 const wordRe = /<word xMin="([\d.]+)" yMin="([\d.]+)" xMax="([\d.]+)" yMax="([\d.]+)">([^<]*)<\/word>/g;
 const words = [];
 let m;
@@ -231,7 +257,7 @@ for (const row of rows) {
         no, subject, type: row.type, teacher: row.teacher,
         group: row.group, groupTokens,
         groupParents: [...new Set(groupTokens.map(parentGroup))],
-        room: row.room,
+        room: resolveRoom(row.room, day),
       });
     }
   }
@@ -240,9 +266,12 @@ for (const row of rows) {
 events.sort((a, b) => a.date.localeCompare(b.date) || a.start.localeCompare(b.start));
 const allGroups = [...new Set(events.flatMap(e => e.groupTokens))].sort();
 
+const DEFAULT_SOURCE_URL = 'https://tu-sofia.bg/api/documents/download?path=schedules%2F33NKmaZZD4fIaxF6UXfHxqwCfvh5hvhsWgNrI4m2.pdf&locale=bg';
+
 const out = {
   meta: {
-    specialty: 'МБИС', semester: 'Зимен семестър 2026/2027', sourceUrl: null,
+    specialty: 'МБИС', semester: 'Зимен семестър 2026/2027',
+    sourceUrl: process.env.SCHEDULE_SOURCE_URL || DEFAULT_SOURCE_URL,
     generatedAt: new Date().toISOString(), academicHourMinutes: ACADEMIC_HOUR_MIN,
   },
   weeks: WEEKS, groups: allGroups, courses, events,

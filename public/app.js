@@ -2,20 +2,31 @@
   'use strict';
 
   const DOW_LABEL = { 'Пн': 'Понеделник', 'Вт': 'Вторник', 'Ср': 'Сряда', 'Чт': 'Четвъртък', 'Пт': 'Петък', 'Сб': 'Събота' };
-  const GROUP_OPTIONS = ['201А', '201Б', '202А', '202Б', '203'];
-  const DEFAULT_GROUPS = GROUP_OPTIONS.slice(); // all groups shown until the user narrows it down
+  // Selectable groups come from the data (data.groups), so a new subgroup
+  // in the official PDF (e.g. 201В) shows up without a code change.
+  let groupOptions = [];
 
   const state = {
     data: null,
-    selectedGroups: loadSelectedGroups(),
+    selectedGroups: [],
   };
+
+  // Leaf groups only: "201" is offered via its subgroups 201А/201Б/…,
+  // while a group without subgroups (e.g. "203") is offered as-is.
+  function computeGroupOptions(groups) {
+    const parentsWithSubgroups = new Set(groups.filter(g => parentGroup(g) !== g).map(parentGroup));
+    return groups.filter(g => !parentsWithSubgroups.has(g));
+  }
 
   function loadSelectedGroups() {
     try {
       const raw = JSON.parse(localStorage.getItem('mbis.groups'));
-      if (Array.isArray(raw) && raw.length && raw.every(g => GROUP_OPTIONS.includes(g))) return raw;
+      if (Array.isArray(raw)) {
+        const valid = raw.filter(g => groupOptions.includes(g));
+        if (valid.length) return valid;
+      }
     } catch (e) { /* ignore */ }
-    return DEFAULT_GROUPS.slice();
+    return groupOptions.slice(); // all groups shown until the user narrows it down
   }
   function saveSelectedGroups() {
     localStorage.setItem('mbis.groups', JSON.stringify(state.selectedGroups));
@@ -33,7 +44,7 @@
   };
 
   function parentGroup(g) {
-    const m = g.match(/^(\d+)[АБ]$/);
+    const m = g.match(/^(\d+)[А-Я]$/);
     return m ? m[1] : g;
   }
 
@@ -213,7 +224,7 @@
 
   function renderGroupToggle() {
     els.groupToggle.innerHTML = '';
-    GROUP_OPTIONS.forEach(g => {
+    groupOptions.forEach(g => {
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'group-chip' + (state.selectedGroups.includes(g) ? ' active' : '');
@@ -244,6 +255,8 @@
       })
       .then(data => {
         state.data = data;
+        groupOptions = computeGroupOptions(data.groups);
+        state.selectedGroups = loadSelectedGroups();
         updateHeaderHeightVar();
         renderGroupToggle();
         renderList(true);

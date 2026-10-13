@@ -29,18 +29,34 @@ execFileSync('pdftotext', ['-bbox-layout', pdfPath, bboxPath]);
 const xml = fs.readFileSync(bboxPath, 'utf8');
 fs.unlinkSync(bboxPath);
 
+// The source spreadsheet occasionally mixes Latin look-alike letters into
+// group/room codes (e.g. "202A" with a Latin A next to "202А" in Cyrillic).
+// Normalise any letter glued to a digit to its Cyrillic twin so the same
+// group never shows up twice.
+const LATIN_TO_CYRILLIC = {
+  A: 'А', B: 'В', C: 'С', E: 'Е', H: 'Н', K: 'К', M: 'М', O: 'О', P: 'Р', T: 'Т', X: 'Х',
+  a: 'а', c: 'с', e: 'е', o: 'о', p: 'р', x: 'х',
+};
+function normalizeCode(s) {
+  return s.replace(/(\d)([A-Za-zА-Яа-я]+)/g, (_, d, letters) =>
+    d + letters.replace(/[A-Za-z]/g, ch => LATIN_TO_CYRILLIC[ch] || ch));
+}
+
 // Plain reading-order text, used to pick up the "room change" footnotes
-// printed below the table (e.g. "* Лекции в понеделник: зала 3401; в
-// останалите дни: 3501."). We resolve these into a concrete room per
-// weekday instead of showing the raw "3401/3501*" to the user.
-const plainText = execFileSync('pdftotext', [pdfPath, '-']).toString('utf8');
+// printed below the table. We resolve these into a concrete room per
+// weekday instead of showing the raw "3401/3501*" to the user. Two
+// wordings have been seen in the official PDF:
+//   "* Лекции в понеделник: зала 3401; в останалите дни: 3501."
+//   "* лекциите в понеделник са в зала 3401."  (other days implied: the
+//   remaining room of the "3401/3501*" pair)
+const plainText = normalizeCode(execFileSync('pdftotext', [pdfPath, '-']).toString('utf8'));
 const DAY_NAME_BG = { 'понеделник': 'Пн', 'вторник': 'Вт', 'сряда': 'Ср', 'четвъртък': 'Чт', 'петък': 'Пт', 'събота': 'Сб' };
-const roomRules = {}; // asterisk-count -> { specialDay, specialRoom, otherRoom }
+const roomRules = {}; // asterisk-count -> { specialDay, specialRoom, otherRoom? }
 {
-  const footnoteRe = /(\*{1,4})\s*(?:Лекции|Лаб\.\s*упражнения)\s+(?:в|във)\s+(понеделник|вторник|сряда|четвъртък|петък|събота)[:\s]+(?:зала\s*)?([^\s;]+)\s*;\s*в\s+останалите\s+дни:\s*([^\s.]+)\.?/giu;
+  const footnoteRe = /(\*{1,4})\s*(?:Лекции(?:те)?|Лаб\.\s*(?:упражнения|упр\.))\s+(?:в|във)\s+(понеделник|вторник|сряда|четвъртък|петък|събота)(?:\s+са\s+в)?[:\s]+(?:(?:зала|з\.)\s*)?([^\s;]*[^\s;.])(?:\s*;\s*в\s+останалите\s+дни:\s*([^\s;]*[^\s;.]))?/giu;
   let fm;
   while ((fm = footnoteRe.exec(plainText))) {
-    roomRules[fm[1].length] = { specialDay: DAY_NAME_BG[fm[2]], specialRoom: fm[3], otherRoom: fm[4] };
+    roomRules[fm[1].length] = { specialDay: DAY_NAME_BG[fm[2].toLowerCase()], specialRoom: fm[3], otherRoom: fm[4] };
   }
 }
 function resolveRoom(rawRoom, day) {
@@ -51,8 +67,15 @@ function resolveRoom(rawRoom, day) {
   const base = rawRoom.slice(0, starMatch.index).trim();
   if (!rule) return base; // unknown footnote marker — at least drop the stray asterisks
   const tokens = base.split('/').map(s => s.trim());
-  if (!tokens.includes(rule.specialRoom) || !tokens.includes(rule.otherRoom)) return base;
-  return day === rule.specialDay ? rule.specialRoom : rule.otherRoom;
+  if (!tokens.includes(rule.specialRoom)) return base;
+  let otherRoom = rule.otherRoom;
+  if (!otherRoom) {
+    const rest = tokens.filter(t => t !== rule.specialRoom);
+    if (rest.length !== 1) return base;
+    otherRoom = rest[0];
+  }
+  if (!tokens.includes(otherRoom)) return base;
+  return day === rule.specialDay ? rule.specialRoom : otherRoom;
 }
 
 const wordRe = /<word xMin="([\d.]+)" yMin="([\d.]+)" xMax="([\d.]+)" yMax="([\d.]+)">([^<]*)<\/word>/g;
@@ -169,6 +192,8 @@ for (const band of rowBands) {
 const rows = rowBands.map(band => {
   const rec = {};
   for (const c of metaCols) rec[c] = band.meta[c] || '';
+  rec.group = normalizeCode(rec.group);
+  rec.room = normalizeCode(rec.room);
   for (let n = 1; n <= 13; n++) rec['w' + n] = (band.week && band.week['w' + n]) || '';
   return rec;
 });
@@ -227,7 +252,7 @@ function parseWeekCell(text) {
   return results;
 }
 function parentGroup(g) {
-  const mm = g.match(/^(\d+)[АБ]$/);
+  const mm = g.match(/^(\d+)[А-Я]$/);
   return mm ? mm[1] : g;
 }
 function addMinutes(hhmm, minutes) {

@@ -3,7 +3,7 @@
     "specialty": "МБИС",
     "semester": "Зимен семестър 2026/2027",
     "sourceUrl": "https://d3v.cloud.tu-sofia.bg/storage/download/schedules/n4HCmE1Khpl5zNVvmwzMdwkgiN1wJaG7mvYOHuro.pdf",
-    "generatedAt": "2026-10-20T20:00:01.598Z",
+    "generatedAt": "2026-10-20T20:09:04.756Z",
     "academicHourMinutes": 45,
     "breakMinutes": 15
   },
@@ -62,3860 +62,6284 @@
     }
   ],
   "groups": [
-    "1",
-    "2",
-    "3",
-    "В. Стоянова",
-    "И. Христов",
-    "К. Ангелов",
-    "Миланов",
-    "О. Маринов",
-    "О. Панагиев",
-    "Р. Илиева",
-    "Р. Костев"
+    "201",
+    "201А",
+    "201Б",
+    "201В",
+    "202",
+    "202А",
+    "202Б",
+    "203"
   ],
   "courses": [
     {
-      "no": "",
-      "subject": "",
-      "type": "1",
-      "teacher": "ИМ Л проф. д.ик.н.",
-      "group": "К. Ангелов",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201/202/203",
       "groupTokens": [
-        "К. Ангелов"
+        "201",
+        "202",
+        "203"
       ],
-      "room": "201/202/203"
+      "room": "3401/3501*"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "room": "201А"
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. И. Христов",
-      "group": "",
-      "groupTokens": [],
-      "room": "201Б"
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "1",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
       "groupTokens": [
-        "1"
+        "201А"
       ],
-      "room": "201В"
+      "room": "3509/3507"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "2",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "ас. И. Христов",
+      "group": "201Б",
       "groupTokens": [
-        "2"
+        "201Б"
       ],
-      "room": "202А"
+      "room": "3429/4130А**"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "3",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 1",
+      "group": "201В",
       "groupTokens": [
-        "3"
+        "201В"
       ],
-      "room": "202Б"
+      "room": "2101В/4130А-събота"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "2",
-      "teacher": "КАСП Л доц. д-р",
-      "group": "О. Маринов",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 2",
+      "group": "202А",
       "groupTokens": [
-        "О. Маринов"
+        "202А"
       ],
-      "room": "201/202/203"
+      "room": "3607"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ инж. Д. Иванов",
-      "group": "",
-      "groupTokens": [],
-      "room": "201А"
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ инж. Ж. Русев",
-      "group": "",
-      "groupTokens": [],
-      "room": "201Б"
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "1",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 3",
+      "group": "202Б",
       "groupTokens": [
-        "1"
+        "202Б"
       ],
-      "room": "201В"
+      "room": "4130Б/3507***"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "2",
+      "no": "2",
+      "subject": "КАСП",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "201/202/203",
       "groupTokens": [
-        "2"
+        "201",
+        "202",
+        "203"
       ],
-      "room": "202А"
+      "room": "3401/3501*"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "3",
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "201А",
       "groupTokens": [
-        "3"
+        "201А"
       ],
-      "room": "202Б"
+      "room": "3607"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "3",
-      "teacher": "ГДТУП Л доц. д-р",
-      "group": "Р. Илиева",
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "инж. Ж. Русев",
+      "group": "201Б",
       "groupTokens": [
-        "Р. Илиева"
+        "201Б"
       ],
-      "room": "201/202/203"
+      "room": "3429"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. Р. Йорданова",
-      "group": "",
-      "groupTokens": [],
-      "room": "201А"
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. А. Ангелов",
-      "group": "",
-      "groupTokens": [],
-      "room": "201Б"
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. Р. Йорданова",
-      "group": "",
-      "groupTokens": [],
-      "room": "201В"
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. А. Ангелов",
-      "group": "",
-      "groupTokens": [],
-      "room": "202А"
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. А. Ангелов",
-      "group": "",
-      "groupTokens": [],
-      "room": "202Б"
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "4",
-      "teacher": "Б4.0 Л доц. д-р",
-      "group": "Р. Костев",
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 1",
+      "group": "201В",
       "groupTokens": [
-        "Р. Костев"
+        "201В"
       ],
-      "room": "201/202/203"
+      "room": "3609"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 2",
+      "group": "202А",
       "groupTokens": [
-        "Миланов"
+        "202А"
       ],
-      "room": "201А"
+      "room": "2101В/4130А****"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 3",
+      "group": "202Б",
       "groupTokens": [
-        "Миланов"
+        "202Б"
       ],
-      "room": "201Б"
+      "room": "4130Б/3507***"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "Лекция",
+      "teacher": "доц. д-р Р. Илиева",
+      "group": "201/202/203",
       "groupTokens": [
-        "Миланов"
+        "201",
+        "202",
+        "203"
       ],
-      "room": "201В"
+      "room": "3401/3501*"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. Р. Йорданова",
+      "group": "201А",
       "groupTokens": [
-        "Миланов"
+        "201А"
       ],
-      "room": "202А"
+      "room": "2101В/4130А****"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "201Б",
       "groupTokens": [
-        "Миланов"
+        "201Б"
       ],
-      "room": "202Б"
+      "room": "2101В/4130А****"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "5",
-      "teacher": "УСП Л доц. д-р",
-      "group": "В. Стоянова",
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. Р. Йорданова",
+      "group": "201В",
       "groupTokens": [
-        "В. Стоянова"
+        "201В"
       ],
-      "room": "201/202/203"
+      "room": "2101В/4130А****"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "202А",
       "groupTokens": [
-        "В. Стоянова"
+        "202А"
       ],
-      "room": "201А"
+      "room": "2101В/4130А****"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "202Б",
       "groupTokens": [
-        "В. Стоянова"
+        "202Б"
       ],
-      "room": "201Б"
+      "room": "2101В/4130А****"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "",
-      "group": "",
-      "groupTokens": [],
-      "room": ""
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "Лекция",
+      "teacher": "доц. д-р Р. Костев",
+      "group": "201/202/203",
       "groupTokens": [
-        "В. Стоянова"
+        "201",
+        "202",
+        "203"
       ],
-      "room": "201В"
+      "room": "3401/3501*"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "",
-      "group": "",
-      "groupTokens": [],
-      "room": ""
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "201А",
       "groupTokens": [
-        "В. Стоянова"
+        "201А"
       ],
-      "room": "202А"
+      "room": "4130Б"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "",
-      "group": "",
-      "groupTokens": [],
-      "room": ""
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "201Б",
       "groupTokens": [
-        "В. Стоянова"
+        "201Б"
       ],
-      "room": "202Б"
+      "room": "4130Б"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "6",
-      "teacher": "ИТБМ Л проф. д.ик.н.",
-      "group": "К. Ангелов",
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "201В",
       "groupTokens": [
-        "К. Ангелов"
+        "201В"
       ],
-      "room": "201"
+      "room": "4130Б"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "room": "201А"
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "room": "201Б"
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. И. Христов",
-      "group": "",
-      "groupTokens": [],
-      "room": "201В"
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "6",
-      "teacher": "АПеКеС Л доц. д-р",
-      "group": "О. Маринов",
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "202А",
       "groupTokens": [
-        "О. Маринов"
+        "202А"
       ],
-      "room": "202"
+      "room": "4130Б"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ инж. Д. Иванов",
-      "group": "",
-      "groupTokens": [],
-      "room": "202А"
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. инж.",
-      "group": "Ж. Русев",
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "202Б",
       "groupTokens": [
-        "Ж. Русев"
+        "202Б"
       ],
-      "room": "202Б"
+      "room": "4130Б"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "7 ИСУБ",
-      "teacher": "ERP Л проф. д.ик.н.",
-      "group": "К. Ангелов",
+      "no": "5",
+      "subject": "УСП",
+      "type": "Лекция",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201/202/203",
       "groupTokens": [
-        "К. Ангелов"
+        "201",
+        "202",
+        "203"
       ],
-      "room": "201"
+      "room": "3401/3501*"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "room": "201А"
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "room": "201Б"
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. инж.",
-      "group": "И. Христов",
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201А",
       "groupTokens": [
-        "И. Христов"
+        "201А"
       ],
-      "room": "201В"
+      "room": "3609"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "7",
-      "teacher": "eКонф. Л доц. д-р",
-      "group": "О. Панагиев",
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201Б",
       "groupTokens": [
-        "О. Панагиев"
+        "201Б"
       ],
-      "room": "202"
+      "room": "3609"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ инж. Д. Иванов",
-      "group": "",
-      "groupTokens": [],
-      "room": "202А"
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. Ж. Русев",
-      "group": "",
-      "groupTokens": [],
-      "room": "202Б"
-    },
-    {
-      "no": "",
-      "subject": "",
-      "type": "8",
-      "teacher": "КП Л проф. д.ик.н.",
-      "group": "К. Ангелов",
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201В",
       "groupTokens": [
-        "К. Ангелов"
+        "201В"
       ],
-      "room": "201"
+      "room": "3609/3507*****"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "Л доц. д-р",
-      "group": "О. Маринов",
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "202А",
       "groupTokens": [
-        "О. Маринов"
+        "202А"
       ],
-      "room": "202"
+      "room": "3609/3507*****"
     },
     {
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "Л доц. д-р",
-      "group": "Р. Илиева",
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "202Б",
       "groupTokens": [
-        "Р. Илиева"
+        "202Б"
       ],
-      "room": "203"
+      "room": "3609/3507*****"
+    },
+    {
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "room": "3401/3501*"
+    },
+    {
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "room": "3509"
+    },
+    {
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "room": "3509"
+    },
+    {
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. И. Христов",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "room": "3509"
+    },
+    {
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "202",
+      "groupTokens": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "room": "3429"
+    },
+    {
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "ЛУ",
+      "teacher": "ас. инж. Ж. Русев",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "room": "3429"
+    },
+    {
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "room": "3401"
+    },
+    {
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "room": "3509"
+    },
+    {
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "room": "3509"
+    },
+    {
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. инж. И. Христов",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "room": "3507"
+    },
+    {
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Панагиев",
+      "group": "202",
+      "groupTokens": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "room": "3429"
+    },
+    {
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "ЛУ",
+      "teacher": "ас. Ж. Русев",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "room": "1511"
+    },
+    {
+      "no": "8",
+      "subject": "КП",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "room": "3534"
+    },
+    {
+      "no": "8",
+      "subject": "КП",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "202",
+      "groupTokens": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "no": "8",
+      "subject": "КП",
+      "type": "Лекция",
+      "teacher": "доц. д-р Р. Илиева",
+      "group": "203",
+      "groupTokens": [
+        "203"
+      ],
+      "room": "3501"
     }
   ],
   "events": [
     {
-      "id": 126,
-      "week": 2,
-      "date": "2026-10-17",
-      "day": "Сб",
-      "start": "16:30",
-      "end": "21:15",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "7 ИСУБ",
-      "teacher": "ERP Л проф. д.ик.н.",
-      "group": "К. Ангелов",
-      "groupTokens": [
-        "К. Ангелов"
-      ],
-      "groupParents": [
-        "К. Ангелов"
-      ],
-      "room": "201"
-    },
-    {
-      "id": 78,
-      "week": 4,
-      "date": "2026-10-26",
+      "id": 0,
+      "week": 1,
+      "date": "2026-10-05",
       "day": "Пн",
-      "start": "3401/3501*",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "5",
-      "teacher": "УСП Л доц. д-р",
-      "group": "В. Стоянова",
-      "groupTokens": [
-        "В. Стоянова"
-      ],
-      "groupParents": [
-        "В. Стоянова"
-      ],
-      "room": "201/202/203"
-    },
-    {
-      "id": 79,
-      "week": 4,
-      "date": "2026-10-27",
-      "day": "Вт",
-      "start": "3401/3501*",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "5",
-      "teacher": "УСП Л доц. д-р",
-      "group": "В. Стоянова",
-      "groupTokens": [
-        "В. Стоянова"
-      ],
-      "groupParents": [
-        "В. Стоянова"
-      ],
-      "room": "201/202/203"
-    },
-    {
-      "id": 80,
-      "week": 4,
-      "date": "2026-10-28",
-      "day": "Ср",
-      "start": "3401/3501*",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "5",
-      "teacher": "УСП Л доц. д-р",
-      "group": "В. Стоянова",
-      "groupTokens": [
-        "В. Стоянова"
-      ],
-      "groupParents": [
-        "В. Стоянова"
-      ],
-      "room": "201/202/203"
-    },
-    {
-      "id": 81,
-      "week": 4,
-      "date": "2026-10-29",
-      "day": "Чт",
-      "start": "3401/3501*",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "5",
-      "teacher": "УСП Л доц. д-р",
-      "group": "В. Стоянова",
-      "groupTokens": [
-        "В. Стоянова"
-      ],
-      "groupParents": [
-        "В. Стоянова"
-      ],
-      "room": "201/202/203"
-    },
-    {
-      "id": 82,
-      "week": 4,
-      "date": "2026-10-30",
-      "day": "Пт",
-      "start": "3401/3501*",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "5",
-      "teacher": "УСП Л доц. д-р",
-      "group": "В. Стоянова",
-      "groupTokens": [
-        "В. Стоянова"
-      ],
-      "groupParents": [
-        "В. Стоянова"
-      ],
-      "room": "201/202/203"
-    },
-    {
-      "id": 83,
-      "week": 4,
-      "date": "2026-10-31",
-      "day": "Сб",
       "start": "16:30",
       "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "5",
-      "teacher": "УСП Л доц. д-р",
-      "group": "В. Стоянова",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201/202/203",
       "groupTokens": [
-        "В. Стоянова"
+        "201",
+        "202",
+        "203"
       ],
       "groupParents": [
-        "В. Стоянова"
+        "201",
+        "202",
+        "203"
       ],
-      "room": "201/202/203"
+      "room": "3401"
     },
     {
-      "id": 53,
-      "week": 5,
-      "date": "2026-11-03",
+      "id": 1,
+      "week": 1,
+      "date": "2026-10-06",
       "day": "Вт",
-      "start": "3401/3501*",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "4",
-      "teacher": "Б4.0 Л доц. д-р",
-      "group": "Р. Костев",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201/202/203",
       "groupTokens": [
-        "Р. Костев"
+        "201",
+        "202",
+        "203"
       ],
       "groupParents": [
-        "Р. Костев"
+        "201",
+        "202",
+        "203"
       ],
-      "room": "201/202/203"
+      "room": "3501"
+    },
+    {
+      "id": 2,
+      "week": 1,
+      "date": "2026-10-07",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "1",
+      "subject": "ИМ",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 3,
+      "week": 1,
+      "date": "2026-10-08",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "1",
+      "subject": "ИМ",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 4,
+      "week": 1,
+      "date": "2026-10-09",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "1",
+      "subject": "ИМ",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 5,
+      "week": 1,
+      "date": "2026-10-10",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "1",
+      "subject": "ИМ",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 214,
+      "week": 1,
+      "date": "2026-10-10",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3401"
+    },
+    {
+      "id": 36,
+      "week": 2,
+      "date": "2026-10-12",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3401"
+    },
+    {
+      "id": 37,
+      "week": 2,
+      "date": "2026-10-13",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 42,
+      "week": 2,
+      "date": "2026-10-14",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3607"
+    },
+    {
+      "id": 48,
+      "week": 2,
+      "date": "2026-10-14",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "инж. Ж. Русев",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3429"
     },
     {
       "id": 54,
-      "week": 5,
-      "date": "2026-11-04",
+      "week": 2,
+      "date": "2026-10-14",
       "day": "Ср",
-      "start": "3401/3501*",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "4",
-      "teacher": "Б4.0 Л доц. д-р",
-      "group": "Р. Костев",
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 1",
+      "group": "201В",
       "groupTokens": [
-        "Р. Костев"
+        "201В"
       ],
       "groupParents": [
-        "Р. Костев"
+        "201"
       ],
-      "room": "201/202/203"
+      "room": "3609"
+    },
+    {
+      "id": 60,
+      "week": 2,
+      "date": "2026-10-14",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 2",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "2101В"
+    },
+    {
+      "id": 66,
+      "week": 2,
+      "date": "2026-10-14",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 3",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3507"
+    },
+    {
+      "id": 43,
+      "week": 2,
+      "date": "2026-10-15",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3607"
+    },
+    {
+      "id": 49,
+      "week": 2,
+      "date": "2026-10-15",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "инж. Ж. Русев",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3429"
     },
     {
       "id": 55,
-      "week": 5,
-      "date": "2026-11-05",
+      "week": 2,
+      "date": "2026-10-15",
       "day": "Чт",
-      "start": "3401/3501*",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "4",
-      "teacher": "Б4.0 Л доц. д-р",
-      "group": "Р. Костев",
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 1",
+      "group": "201В",
       "groupTokens": [
-        "Р. Костев"
+        "201В"
       ],
       "groupParents": [
-        "Р. Костев"
+        "201"
       ],
-      "room": "201/202/203"
+      "room": "3609"
+    },
+    {
+      "id": 61,
+      "week": 2,
+      "date": "2026-10-15",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 2",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "2101В"
+    },
+    {
+      "id": 67,
+      "week": 2,
+      "date": "2026-10-15",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 3",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 38,
+      "week": 2,
+      "date": "2026-10-16",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 44,
+      "week": 2,
+      "date": "2026-10-17",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3607"
+    },
+    {
+      "id": 50,
+      "week": 2,
+      "date": "2026-10-17",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "инж. Ж. Русев",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3429"
     },
     {
       "id": 56,
-      "week": 5,
-      "date": "2026-11-06",
-      "day": "Пт",
-      "start": "3401/3501*",
-      "end": "NaN:NaN",
+      "week": 2,
+      "date": "2026-10-17",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "4",
-      "teacher": "Б4.0 Л доц. д-р",
-      "group": "Р. Костев",
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 1",
+      "group": "201В",
       "groupTokens": [
-        "Р. Костев"
+        "201В"
       ],
       "groupParents": [
-        "Р. Костев"
+        "201"
       ],
-      "room": "201/202/203"
+      "room": "3609"
+    },
+    {
+      "id": 62,
+      "week": 2,
+      "date": "2026-10-17",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 2",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "4130А"
+    },
+    {
+      "id": 68,
+      "week": 2,
+      "date": "2026-10-17",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 3",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 238,
+      "week": 2,
+      "date": "2026-10-17",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Панагиев",
+      "group": "202",
+      "groupTokens": [
+        "202"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 39,
+      "week": 3,
+      "date": "2026-10-19",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3401"
+    },
+    {
+      "id": 40,
+      "week": 3,
+      "date": "2026-10-20",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 45,
+      "week": 3,
+      "date": "2026-10-21",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3607"
+    },
+    {
+      "id": 51,
+      "week": 3,
+      "date": "2026-10-21",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "инж. Ж. Русев",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3429"
     },
     {
       "id": 57,
+      "week": 3,
+      "date": "2026-10-21",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 1",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 63,
+      "week": 3,
+      "date": "2026-10-21",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 2",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "2101В"
+    },
+    {
+      "id": 69,
+      "week": 3,
+      "date": "2026-10-21",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 3",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3507"
+    },
+    {
+      "id": 46,
+      "week": 3,
+      "date": "2026-10-22",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3607"
+    },
+    {
+      "id": 52,
+      "week": 3,
+      "date": "2026-10-22",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "инж. Ж. Русев",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 58,
+      "week": 3,
+      "date": "2026-10-22",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 1",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 64,
+      "week": 3,
+      "date": "2026-10-22",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 2",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "2101В"
+    },
+    {
+      "id": 70,
+      "week": 3,
+      "date": "2026-10-22",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 3",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 41,
+      "week": 3,
+      "date": "2026-10-23",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 47,
+      "week": 3,
+      "date": "2026-10-24",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3607"
+    },
+    {
+      "id": 53,
+      "week": 3,
+      "date": "2026-10-24",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "инж. Ж. Русев",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 59,
+      "week": 3,
+      "date": "2026-10-24",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 1",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 65,
+      "week": 3,
+      "date": "2026-10-24",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 2",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "4130А"
+    },
+    {
+      "id": 71,
+      "week": 3,
+      "date": "2026-10-24",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "2",
+      "subject": "КАСП",
+      "type": "ЛУ",
+      "teacher": "хоноруван 3",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 239,
+      "week": 3,
+      "date": "2026-10-24",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Панагиев",
+      "group": "202",
+      "groupTokens": [
+        "202"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 139,
+      "week": 4,
+      "date": "2026-10-26",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "Лекция",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3401"
+    },
+    {
+      "id": 140,
+      "week": 4,
+      "date": "2026-10-27",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "Лекция",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 141,
+      "week": 4,
+      "date": "2026-10-28",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "Лекция",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 142,
+      "week": 4,
+      "date": "2026-10-29",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "Лекция",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 143,
+      "week": 4,
+      "date": "2026-10-30",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "Лекция",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 144,
+      "week": 4,
+      "date": "2026-10-31",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "Лекция",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 106,
+      "week": 5,
+      "date": "2026-11-03",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "Лекция",
+      "teacher": "доц. д-р Р. Костев",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 107,
+      "week": 5,
+      "date": "2026-11-04",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "Лекция",
+      "teacher": "доц. д-р Р. Костев",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 108,
+      "week": 5,
+      "date": "2026-11-05",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "Лекция",
+      "teacher": "доц. д-р Р. Костев",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 109,
+      "week": 5,
+      "date": "2026-11-06",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "Лекция",
+      "teacher": "доц. д-р Р. Костев",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 110,
       "week": 5,
       "date": "2026-11-07",
       "day": "Сб",
-      "start": "16:30",
-      "end": "02:15",
+      "start": "8:30",
+      "end": "18:15",
       "hours": 10,
-      "no": "",
-      "subject": "",
-      "type": "4",
-      "teacher": "Б4.0 Л доц. д-р",
-      "group": "Р. Костев",
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "Лекция",
+      "teacher": "доц. д-р Р. Костев",
+      "group": "201/202/203",
       "groupTokens": [
-        "Р. Костев"
+        "201",
+        "202",
+        "203"
       ],
       "groupParents": [
-        "Р. Костев"
+        "201",
+        "202",
+        "203"
       ],
-      "room": "201/202/203"
-    },
-    {
-      "id": 12,
-      "week": 6,
-      "date": "2026-11-09",
-      "day": "Пн",
-      "start": "2101В/4130А-събота",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "1",
-      "groupTokens": [
-        "1"
-      ],
-      "groupParents": [
-        "1"
-      ],
-      "room": "201В"
+      "room": "3501"
     },
     {
       "id": 6,
       "week": 6,
       "date": "2026-11-09",
       "day": "Пн",
-      "start": "3429/4130A**",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. И. Христов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201Б"
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509/3507"
     },
     {
-      "id": 0,
+      "id": 12,
       "week": 6,
       "date": "2026-11-09",
       "day": "Пн",
-      "start": "3509/3507",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201А"
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "ас. И. Христов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3429"
     },
     {
       "id": 18,
       "week": 6,
       "date": "2026-11-09",
       "day": "Пн",
-      "start": "3607",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "2",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 1",
+      "group": "201В",
       "groupTokens": [
-        "2"
+        "201В"
       ],
       "groupParents": [
-        "2"
+        "201"
       ],
-      "room": "202А"
+      "room": "2101В"
     },
     {
       "id": 24,
       "week": 6,
       "date": "2026-11-09",
       "day": "Пн",
-      "start": "4130Б/3507***",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "3",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 2",
+      "group": "202А",
       "groupTokens": [
-        "3"
+        "202А"
       ],
       "groupParents": [
-        "3"
+        "202"
       ],
-      "room": "202Б"
+      "room": "3607"
     },
     {
-      "id": 13,
+      "id": 30,
       "week": 6,
-      "date": "2026-11-10",
-      "day": "Вт",
-      "start": "2101В/4130А-събота",
-      "end": "NaN:NaN",
+      "date": "2026-11-09",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "1",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 3",
+      "group": "202Б",
       "groupTokens": [
-        "1"
+        "202Б"
       ],
       "groupParents": [
-        "1"
+        "202"
       ],
-      "room": "201В"
+      "room": "4130Б"
     },
     {
       "id": 7,
       "week": 6,
       "date": "2026-11-10",
       "day": "Вт",
-      "start": "3429/4130A**",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. И. Христов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201Б"
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509/3507"
     },
     {
-      "id": 1,
+      "id": 13,
       "week": 6,
       "date": "2026-11-10",
       "day": "Вт",
-      "start": "3509/3507",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201А"
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "ас. И. Христов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "4130А"
     },
     {
       "id": 19,
       "week": 6,
       "date": "2026-11-10",
       "day": "Вт",
-      "start": "3607",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "2",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 1",
+      "group": "201В",
       "groupTokens": [
-        "2"
+        "201В"
       ],
       "groupParents": [
-        "2"
+        "201"
       ],
-      "room": "202А"
+      "room": "2101В"
     },
     {
       "id": 25,
       "week": 6,
       "date": "2026-11-10",
       "day": "Вт",
-      "start": "4130Б/3507***",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "3",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 2",
+      "group": "202А",
       "groupTokens": [
-        "3"
+        "202А"
       ],
       "groupParents": [
-        "3"
+        "202"
       ],
-      "room": "202Б"
+      "room": "3607"
     },
     {
-      "id": 14,
+      "id": 31,
       "week": 6,
-      "date": "2026-11-11",
-      "day": "Ср",
-      "start": "2101В/4130А-събота",
-      "end": "NaN:NaN",
+      "date": "2026-11-10",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "1",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 3",
+      "group": "202Б",
       "groupTokens": [
-        "1"
+        "202Б"
       ],
       "groupParents": [
-        "1"
+        "202"
       ],
-      "room": "201В"
+      "room": "4130Б"
     },
     {
       "id": 8,
       "week": 6,
       "date": "2026-11-11",
       "day": "Ср",
-      "start": "3429/4130A**",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. И. Христов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201Б"
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509/3507"
     },
     {
-      "id": 2,
+      "id": 14,
       "week": 6,
       "date": "2026-11-11",
       "day": "Ср",
-      "start": "3509/3507",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201А"
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "ас. И. Христов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3429"
     },
     {
       "id": 20,
       "week": 6,
       "date": "2026-11-11",
       "day": "Ср",
-      "start": "3607",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "2",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 1",
+      "group": "201В",
       "groupTokens": [
-        "2"
+        "201В"
       ],
       "groupParents": [
-        "2"
+        "201"
       ],
-      "room": "202А"
+      "room": "2101В"
     },
     {
       "id": 26,
       "week": 6,
       "date": "2026-11-11",
       "day": "Ср",
-      "start": "4130Б/3507***",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "3",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 2",
+      "group": "202А",
       "groupTokens": [
-        "3"
+        "202А"
       ],
       "groupParents": [
-        "3"
+        "202"
       ],
-      "room": "202Б"
+      "room": "3607"
     },
     {
-      "id": 15,
+      "id": 32,
       "week": 6,
-      "date": "2026-11-12",
-      "day": "Чт",
-      "start": "2101В/4130А-събота",
-      "end": "NaN:NaN",
+      "date": "2026-11-11",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "1",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 3",
+      "group": "202Б",
       "groupTokens": [
-        "1"
+        "202Б"
       ],
       "groupParents": [
-        "1"
+        "202"
       ],
-      "room": "201В"
+      "room": "3507"
     },
     {
       "id": 9,
       "week": 6,
       "date": "2026-11-12",
       "day": "Чт",
-      "start": "3429/4130A**",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. И. Христов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201Б"
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509/3507"
     },
     {
-      "id": 3,
+      "id": 15,
       "week": 6,
       "date": "2026-11-12",
       "day": "Чт",
-      "start": "3509/3507",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201А"
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "ас. И. Христов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3429"
     },
     {
       "id": 21,
       "week": 6,
       "date": "2026-11-12",
       "day": "Чт",
-      "start": "3607",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "2",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 1",
+      "group": "201В",
       "groupTokens": [
-        "2"
+        "201В"
       ],
       "groupParents": [
-        "2"
+        "201"
       ],
-      "room": "202А"
+      "room": "2101В"
     },
     {
       "id": 27,
       "week": 6,
       "date": "2026-11-12",
       "day": "Чт",
-      "start": "4130Б/3507***",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "3",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 2",
+      "group": "202А",
       "groupTokens": [
-        "3"
+        "202А"
       ],
       "groupParents": [
-        "3"
+        "202"
       ],
-      "room": "202Б"
+      "room": "3607"
     },
     {
-      "id": 16,
+      "id": 33,
       "week": 6,
-      "date": "2026-11-13",
-      "day": "Пт",
-      "start": "2101В/4130А-събота",
-      "end": "NaN:NaN",
+      "date": "2026-11-12",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "1",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 3",
+      "group": "202Б",
       "groupTokens": [
-        "1"
+        "202Б"
       ],
       "groupParents": [
-        "1"
+        "202"
       ],
-      "room": "201В"
+      "room": "4130Б"
     },
     {
       "id": 10,
       "week": 6,
       "date": "2026-11-13",
       "day": "Пт",
-      "start": "3429/4130A**",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. И. Христов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201Б"
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509/3507"
     },
     {
-      "id": 4,
+      "id": 16,
       "week": 6,
       "date": "2026-11-13",
       "day": "Пт",
-      "start": "3509/3507",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201А"
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "ас. И. Христов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3429"
     },
     {
       "id": 22,
       "week": 6,
       "date": "2026-11-13",
       "day": "Пт",
-      "start": "3607",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "2",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 1",
+      "group": "201В",
       "groupTokens": [
-        "2"
+        "201В"
       ],
       "groupParents": [
-        "2"
+        "201"
       ],
-      "room": "202А"
+      "room": "2101В"
     },
     {
       "id": 28,
       "week": 6,
       "date": "2026-11-13",
       "day": "Пт",
-      "start": "4130Б/3507***",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "3",
-      "groupTokens": [
-        "3"
-      ],
-      "groupParents": [
-        "3"
-      ],
-      "room": "202Б"
-    },
-    {
-      "id": 5,
-      "week": 6,
-      "date": "2026-11-14",
-      "day": "Сб",
       "start": "16:30",
       "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201А"
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 2",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3607"
+    },
+    {
+      "id": 34,
+      "week": 6,
+      "date": "2026-11-13",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 3",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "4130Б"
     },
     {
       "id": 11,
       "week": 6,
       "date": "2026-11-14",
       "day": "Сб",
-      "start": "16:30",
-      "end": "21:15",
+      "start": "8:30",
+      "end": "13:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. И. Христов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201Б"
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509/3507"
     },
     {
       "id": 17,
       "week": 6,
       "date": "2026-11-14",
       "day": "Сб",
-      "start": "16:30",
-      "end": "21:15",
+      "start": "8:30",
+      "end": "13:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "1",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "ас. И. Христов",
+      "group": "201Б",
       "groupTokens": [
-        "1"
+        "201Б"
       ],
       "groupParents": [
-        "1"
+        "201"
       ],
-      "room": "201В"
+      "room": "3429"
     },
     {
       "id": 23,
       "week": 6,
       "date": "2026-11-14",
       "day": "Сб",
-      "start": "16:30",
-      "end": "21:15",
+      "start": "8:30",
+      "end": "13:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "2",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 1",
+      "group": "201В",
       "groupTokens": [
-        "2"
+        "201В"
       ],
       "groupParents": [
-        "2"
+        "201"
       ],
-      "room": "202А"
+      "room": "4130А"
     },
     {
       "id": 29,
       "week": 6,
       "date": "2026-11-14",
       "day": "Сб",
-      "start": "16:30",
-      "end": "21:15",
+      "start": "8:30",
+      "end": "13:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хоноруван",
-      "group": "3",
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 2",
+      "group": "202А",
       "groupTokens": [
-        "3"
+        "202А"
       ],
       "groupParents": [
-        "3"
+        "202"
       ],
-      "room": "202Б"
-    },
-    {
-      "id": 127,
-      "week": 6,
-      "date": "2026-11-14",
-      "day": "Сб",
-      "start": "16:30",
-      "end": "21:15",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "7 ИСУБ",
-      "teacher": "ERP Л проф. д.ик.н.",
-      "group": "К. Ангелов",
-      "groupTokens": [
-        "К. Ангелов"
-      ],
-      "groupParents": [
-        "К. Ангелов"
-      ],
-      "room": "201"
-    },
-    {
-      "id": 128,
-      "week": 7,
-      "date": "2026-11-16",
-      "day": "Пн",
-      "start": "3401",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "7 ИСУБ",
-      "teacher": "ERP Л проф. д.ик.н.",
-      "group": "К. Ангелов",
-      "groupTokens": [
-        "К. Ангелов"
-      ],
-      "groupParents": [
-        "К. Ангелов"
-      ],
-      "room": "201"
-    },
-    {
-      "id": 150,
-      "week": 7,
-      "date": "2026-11-16",
-      "day": "Пн",
-      "start": "3429",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "7",
-      "teacher": "eКонф. Л доц. д-р",
-      "group": "О. Панагиев",
-      "groupTokens": [
-        "О. Панагиев"
-      ],
-      "groupParents": [
-        "О. Панагиев"
-      ],
-      "room": "202"
-    },
-    {
-      "id": 30,
-      "week": 7,
-      "date": "2026-11-17",
-      "day": "Вт",
-      "start": "3401/3501*",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "3",
-      "teacher": "ГДТУП Л доц. д-р",
-      "group": "Р. Илиева",
-      "groupTokens": [
-        "Р. Илиева"
-      ],
-      "groupParents": [
-        "Р. Илиева"
-      ],
-      "room": "201/202/203"
-    },
-    {
-      "id": 31,
-      "week": 7,
-      "date": "2026-11-18",
-      "day": "Ср",
-      "start": "3401/3501*",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "3",
-      "teacher": "ГДТУП Л доц. д-р",
-      "group": "Р. Илиева",
-      "groupTokens": [
-        "Р. Илиева"
-      ],
-      "groupParents": [
-        "Р. Илиева"
-      ],
-      "room": "201/202/203"
-    },
-    {
-      "id": 32,
-      "week": 7,
-      "date": "2026-11-19",
-      "day": "Чт",
-      "start": "3401/3501*",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "3",
-      "teacher": "ГДТУП Л доц. д-р",
-      "group": "Р. Илиева",
-      "groupTokens": [
-        "Р. Илиева"
-      ],
-      "groupParents": [
-        "Р. Илиева"
-      ],
-      "room": "201/202/203"
-    },
-    {
-      "id": 33,
-      "week": 7,
-      "date": "2026-11-20",
-      "day": "Пт",
-      "start": "3401/3501*",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "3",
-      "teacher": "ГДТУП Л доц. д-р",
-      "group": "Р. Илиева",
-      "groupTokens": [
-        "Р. Илиева"
-      ],
-      "groupParents": [
-        "Р. Илиева"
-      ],
-      "room": "201/202/203"
-    },
-    {
-      "id": 34,
-      "week": 7,
-      "date": "2026-11-21",
-      "day": "Сб",
-      "start": "16:30",
-      "end": "02:15",
-      "hours": 10,
-      "no": "",
-      "subject": "",
-      "type": "3",
-      "teacher": "ГДТУП Л доц. д-р",
-      "group": "Р. Илиева",
-      "groupTokens": [
-        "Р. Илиева"
-      ],
-      "groupParents": [
-        "Р. Илиева"
-      ],
-      "room": "201/202/203"
-    },
-    {
-      "id": 102,
-      "week": 8,
-      "date": "2026-11-23",
-      "day": "Пн",
-      "start": "3401/3501*",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "6",
-      "teacher": "ИТБМ Л проф. д.ик.н.",
-      "group": "К. Ангелов",
-      "groupTokens": [
-        "К. Ангелов"
-      ],
-      "groupParents": [
-        "К. Ангелов"
-      ],
-      "room": "201"
-    },
-    {
-      "id": 120,
-      "week": 8,
-      "date": "2026-11-23",
-      "day": "Пн",
-      "start": "3429",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "6",
-      "teacher": "АПеКеС Л доц. д-р",
-      "group": "О. Маринов",
-      "groupTokens": [
-        "О. Маринов"
-      ],
-      "groupParents": [
-        "О. Маринов"
-      ],
-      "room": "202"
-    },
-    {
-      "id": 103,
-      "week": 8,
-      "date": "2026-11-24",
-      "day": "Вт",
-      "start": "3401/3501*",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "6",
-      "teacher": "ИТБМ Л проф. д.ик.н.",
-      "group": "К. Ангелов",
-      "groupTokens": [
-        "К. Ангелов"
-      ],
-      "groupParents": [
-        "К. Ангелов"
-      ],
-      "room": "201"
-    },
-    {
-      "id": 121,
-      "week": 8,
-      "date": "2026-11-24",
-      "day": "Вт",
-      "start": "3429",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "6",
-      "teacher": "АПеКеС Л доц. д-р",
-      "group": "О. Маринов",
-      "groupTokens": [
-        "О. Маринов"
-      ],
-      "groupParents": [
-        "О. Маринов"
-      ],
-      "room": "202"
-    },
-    {
-      "id": 104,
-      "week": 8,
-      "date": "2026-11-25",
-      "day": "Ср",
-      "start": "3401/3501*",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "6",
-      "teacher": "ИТБМ Л проф. д.ик.н.",
-      "group": "К. Ангелов",
-      "groupTokens": [
-        "К. Ангелов"
-      ],
-      "groupParents": [
-        "К. Ангелов"
-      ],
-      "room": "201"
-    },
-    {
-      "id": 122,
-      "week": 8,
-      "date": "2026-11-25",
-      "day": "Ср",
-      "start": "3429",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "6",
-      "teacher": "АПеКеС Л доц. д-р",
-      "group": "О. Маринов",
-      "groupTokens": [
-        "О. Маринов"
-      ],
-      "groupParents": [
-        "О. Маринов"
-      ],
-      "room": "202"
-    },
-    {
-      "id": 105,
-      "week": 8,
-      "date": "2026-11-26",
-      "day": "Чт",
-      "start": "3401/3501*",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "6",
-      "teacher": "ИТБМ Л проф. д.ик.н.",
-      "group": "К. Ангелов",
-      "groupTokens": [
-        "К. Ангелов"
-      ],
-      "groupParents": [
-        "К. Ангелов"
-      ],
-      "room": "201"
-    },
-    {
-      "id": 123,
-      "week": 8,
-      "date": "2026-11-26",
-      "day": "Чт",
-      "start": "3429",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "6",
-      "teacher": "АПеКеС Л доц. д-р",
-      "group": "О. Маринов",
-      "groupTokens": [
-        "О. Маринов"
-      ],
-      "groupParents": [
-        "О. Маринов"
-      ],
-      "room": "202"
-    },
-    {
-      "id": 106,
-      "week": 8,
-      "date": "2026-11-27",
-      "day": "Пт",
-      "start": "3401/3501*",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "6",
-      "teacher": "ИТБМ Л проф. д.ик.н.",
-      "group": "К. Ангелов",
-      "groupTokens": [
-        "К. Ангелов"
-      ],
-      "groupParents": [
-        "К. Ангелов"
-      ],
-      "room": "201"
-    },
-    {
-      "id": 124,
-      "week": 8,
-      "date": "2026-11-27",
-      "day": "Пт",
-      "start": "3429",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "6",
-      "teacher": "АПеКеС Л доц. д-р",
-      "group": "О. Маринов",
-      "groupTokens": [
-        "О. Маринов"
-      ],
-      "groupParents": [
-        "О. Маринов"
-      ],
-      "room": "202"
-    },
-    {
-      "id": 107,
-      "week": 8,
-      "date": "2026-11-28",
-      "day": "Сб",
-      "start": "16:30",
-      "end": "21:15",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "6",
-      "teacher": "ИТБМ Л проф. д.ик.н.",
-      "group": "К. Ангелов",
-      "groupTokens": [
-        "К. Ангелов"
-      ],
-      "groupParents": [
-        "К. Ангелов"
-      ],
-      "room": "201"
-    },
-    {
-      "id": 125,
-      "week": 8,
-      "date": "2026-11-28",
-      "day": "Сб",
-      "start": "16:30",
-      "end": "21:15",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "6",
-      "teacher": "АПеКеС Л доц. д-р",
-      "group": "О. Маринов",
-      "groupTokens": [
-        "О. Маринов"
-      ],
-      "groupParents": [
-        "О. Маринов"
-      ],
-      "room": "202"
-    },
-    {
-      "id": 129,
-      "week": 8,
-      "date": "2026-11-28",
-      "day": "Сб",
-      "start": "16:30",
-      "end": "21:15",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "7 ИСУБ",
-      "teacher": "ERP Л проф. д.ик.н.",
-      "group": "К. Ангелов",
-      "groupTokens": [
-        "К. Ангелов"
-      ],
-      "groupParents": [
-        "К. Ангелов"
-      ],
-      "room": "201"
-    },
-    {
-      "id": 64,
-      "week": 9,
-      "date": "2026-12-03",
-      "day": "Чт",
-      "start": "4130Б",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
-      "groupTokens": [
-        "Миланов"
-      ],
-      "groupParents": [
-        "Миланов"
-      ],
-      "room": "201Б"
-    },
-    {
-      "id": 65,
-      "week": 9,
-      "date": "2026-12-04",
-      "day": "Пт",
-      "start": "4130Б",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
-      "groupTokens": [
-        "Миланов"
-      ],
-      "groupParents": [
-        "Миланов"
-      ],
-      "room": "201Б"
+      "room": "3607"
     },
     {
       "id": 35,
-      "week": 10,
-      "date": "2026-12-07",
+      "week": 6,
+      "date": "2026-11-14",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "1",
+      "subject": "ИМ",
+      "type": "ЛУ",
+      "teacher": "хоноруван 3",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 215,
+      "week": 6,
+      "date": "2026-11-14",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3401"
+    },
+    {
+      "id": 216,
+      "week": 7,
+      "date": "2026-11-16",
       "day": "Пн",
-      "start": "2101В/4130А****",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. Р. Йорданова",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201В"
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3401"
     },
     {
-      "id": 152,
-      "week": 10,
-      "date": "2026-12-07",
+      "id": 240,
+      "week": 7,
+      "date": "2026-11-16",
       "day": "Пн",
-      "start": "3429",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ инж. Д. Иванов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "202А"
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Панагиев",
+      "group": "202",
+      "groupTokens": [
+        "202"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
     },
     {
-      "id": 108,
-      "week": 10,
-      "date": "2026-12-07",
+      "id": 72,
+      "week": 7,
+      "date": "2026-11-17",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "Лекция",
+      "teacher": "доц. д-р Р. Илиева",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 73,
+      "week": 7,
+      "date": "2026-11-18",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "Лекция",
+      "teacher": "доц. д-р Р. Илиева",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 74,
+      "week": 7,
+      "date": "2026-11-19",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "Лекция",
+      "teacher": "доц. д-р Р. Илиева",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 75,
+      "week": 7,
+      "date": "2026-11-20",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "Лекция",
+      "teacher": "доц. д-р Р. Илиева",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 76,
+      "week": 7,
+      "date": "2026-11-21",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "18:15",
+      "hours": 10,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "Лекция",
+      "teacher": "доц. д-р Р. Илиева",
+      "group": "201/202/203",
+      "groupTokens": [
+        "201",
+        "202",
+        "203"
+      ],
+      "groupParents": [
+        "201",
+        "202",
+        "203"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 174,
+      "week": 8,
+      "date": "2026-11-23",
       "day": "Пн",
-      "start": "3509",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201Б"
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3401"
     },
     {
-      "id": 96,
-      "week": 10,
-      "date": "2026-12-07",
+      "id": 197,
+      "week": 8,
+      "date": "2026-11-23",
       "day": "Пн",
-      "start": "3609/ 3507*****",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "202",
       "groupTokens": [
-        "В. Стоянова"
+        "202"
       ],
       "groupParents": [
-        "В. Стоянова"
+        "202"
       ],
-      "room": "202Б"
+      "room": "3429"
     },
     {
-      "id": 58,
-      "week": 10,
-      "date": "2026-12-07",
+      "id": 175,
+      "week": 8,
+      "date": "2026-11-24",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 198,
+      "week": 8,
+      "date": "2026-11-24",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "202",
+      "groupTokens": [
+        "202"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 176,
+      "week": 8,
+      "date": "2026-11-25",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 199,
+      "week": 8,
+      "date": "2026-11-25",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "202",
+      "groupTokens": [
+        "202"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 177,
+      "week": 8,
+      "date": "2026-11-26",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 200,
+      "week": 8,
+      "date": "2026-11-26",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "202",
+      "groupTokens": [
+        "202"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 178,
+      "week": 8,
+      "date": "2026-11-27",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 201,
+      "week": 8,
+      "date": "2026-11-27",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "202",
+      "groupTokens": [
+        "202"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 179,
+      "week": 8,
+      "date": "2026-11-28",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3501"
+    },
+    {
+      "id": 202,
+      "week": 8,
+      "date": "2026-11-28",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "202",
+      "groupTokens": [
+        "202"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 217,
+      "week": 8,
+      "date": "2026-11-28",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3401"
+    },
+    {
+      "id": 241,
+      "week": 8,
+      "date": "2026-11-28",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Панагиев",
+      "group": "202",
+      "groupTokens": [
+        "202"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 77,
+      "week": 9,
+      "date": "2026-11-30",
       "day": "Пн",
-      "start": "4130Б",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
-      "groupTokens": [
-        "Миланов"
-      ],
-      "groupParents": [
-        "Миланов"
-      ],
-      "room": "201А"
-    },
-    {
-      "id": 36,
-      "week": 10,
-      "date": "2026-12-08",
-      "day": "Вт",
-      "start": "2101В/4130А****",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. Р. Йорданова",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201В"
-    },
-    {
-      "id": 153,
-      "week": 10,
-      "date": "2026-12-08",
-      "day": "Вт",
-      "start": "3429",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ инж. Д. Иванов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "202А"
-    },
-    {
-      "id": 109,
-      "week": 10,
-      "date": "2026-12-08",
-      "day": "Вт",
-      "start": "3509",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201Б"
-    },
-    {
-      "id": 97,
-      "week": 10,
-      "date": "2026-12-08",
-      "day": "Вт",
-      "start": "3609/ 3507*****",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
-      "groupTokens": [
-        "В. Стоянова"
-      ],
-      "groupParents": [
-        "В. Стоянова"
-      ],
-      "room": "202Б"
-    },
-    {
-      "id": 59,
-      "week": 10,
-      "date": "2026-12-08",
-      "day": "Вт",
-      "start": "4130Б",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
-      "groupTokens": [
-        "Миланов"
-      ],
-      "groupParents": [
-        "Миланов"
-      ],
-      "room": "201А"
-    },
-    {
-      "id": 37,
-      "week": 10,
-      "date": "2026-12-09",
-      "day": "Ср",
-      "start": "2101В/4130А****",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. Р. Йорданова",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201В"
-    },
-    {
-      "id": 154,
-      "week": 10,
-      "date": "2026-12-09",
-      "day": "Ср",
-      "start": "3429",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ инж. Д. Иванов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "202А"
-    },
-    {
-      "id": 110,
-      "week": 10,
-      "date": "2026-12-09",
-      "day": "Ср",
-      "start": "3509",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201Б"
-    },
-    {
-      "id": 98,
-      "week": 10,
-      "date": "2026-12-09",
-      "day": "Ср",
-      "start": "3609/ 3507*****",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
-      "groupTokens": [
-        "В. Стоянова"
-      ],
-      "groupParents": [
-        "В. Стоянова"
-      ],
-      "room": "202Б"
-    },
-    {
-      "id": 60,
-      "week": 10,
-      "date": "2026-12-09",
-      "day": "Ср",
-      "start": "4130Б",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
-      "groupTokens": [
-        "Миланов"
-      ],
-      "groupParents": [
-        "Миланов"
-      ],
-      "room": "201А"
-    },
-    {
-      "id": 38,
-      "week": 10,
-      "date": "2026-12-10",
-      "day": "Чт",
-      "start": "2101В/4130А****",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. Р. Йорданова",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201В"
-    },
-    {
-      "id": 155,
-      "week": 10,
-      "date": "2026-12-10",
-      "day": "Чт",
-      "start": "3429",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ инж. Д. Иванов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "202А"
-    },
-    {
-      "id": 111,
-      "week": 10,
-      "date": "2026-12-10",
-      "day": "Чт",
-      "start": "3509",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201Б"
-    },
-    {
-      "id": 99,
-      "week": 10,
-      "date": "2026-12-10",
-      "day": "Чт",
-      "start": "3609/ 3507*****",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
-      "groupTokens": [
-        "В. Стоянова"
-      ],
-      "groupParents": [
-        "В. Стоянова"
-      ],
-      "room": "202Б"
-    },
-    {
-      "id": 61,
-      "week": 10,
-      "date": "2026-12-10",
-      "day": "Чт",
-      "start": "4130Б",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
-      "groupTokens": [
-        "Миланов"
-      ],
-      "groupParents": [
-        "Миланов"
-      ],
-      "room": "201А"
-    },
-    {
-      "id": 39,
-      "week": 10,
-      "date": "2026-12-11",
-      "day": "Пт",
-      "start": "2101В/4130А****",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. Р. Йорданова",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201В"
-    },
-    {
-      "id": 156,
-      "week": 10,
-      "date": "2026-12-11",
-      "day": "Пт",
-      "start": "3429",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ инж. Д. Иванов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "202А"
-    },
-    {
-      "id": 112,
-      "week": 10,
-      "date": "2026-12-11",
-      "day": "Пт",
-      "start": "3509",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201Б"
-    },
-    {
-      "id": 100,
-      "week": 10,
-      "date": "2026-12-11",
-      "day": "Пт",
-      "start": "3609/ 3507*****",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
-      "groupTokens": [
-        "В. Стоянова"
-      ],
-      "groupParents": [
-        "В. Стоянова"
-      ],
-      "room": "202Б"
-    },
-    {
-      "id": 62,
-      "week": 10,
-      "date": "2026-12-11",
-      "day": "Пт",
-      "start": "4130Б",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
-      "groupTokens": [
-        "Миланов"
-      ],
-      "groupParents": [
-        "Миланов"
-      ],
-      "room": "201А"
-    },
-    {
-      "id": 40,
-      "week": 10,
-      "date": "2026-12-12",
-      "day": "Сб",
       "start": "16:30",
       "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. Р. Йорданова",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201В"
-    },
-    {
-      "id": 63,
-      "week": 10,
-      "date": "2026-12-12",
-      "day": "Сб",
-      "start": "16:30",
-      "end": "21:15",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. Р. Йорданова",
+      "group": "201А",
       "groupTokens": [
-        "Миланов"
+        "201А"
       ],
       "groupParents": [
-        "Миланов"
+        "201"
       ],
-      "room": "201А"
+      "room": "2101В"
     },
     {
-      "id": 101,
-      "week": 10,
-      "date": "2026-12-12",
-      "day": "Сб",
+      "id": 117,
+      "week": 9,
+      "date": "2026-11-30",
+      "day": "Пн",
       "start": "16:30",
       "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "201Б",
       "groupTokens": [
-        "В. Стоянова"
+        "201Б"
       ],
       "groupParents": [
-        "В. Стоянова"
+        "201"
       ],
-      "room": "202Б"
-    },
-    {
-      "id": 113,
-      "week": 10,
-      "date": "2026-12-12",
-      "day": "Сб",
-      "start": "16:30",
-      "end": "21:15",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201Б"
-    },
-    {
-      "id": 130,
-      "week": 10,
-      "date": "2026-12-12",
-      "day": "Сб",
-      "start": "16:30",
-      "end": "21:15",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "7 ИСУБ",
-      "teacher": "ERP Л проф. д.ик.н.",
-      "group": "К. Ангелов",
-      "groupTokens": [
-        "К. Ангелов"
-      ],
-      "groupParents": [
-        "К. Ангелов"
-      ],
-      "room": "201"
-    },
-    {
-      "id": 151,
-      "week": 10,
-      "date": "2026-12-12",
-      "day": "Сб",
-      "start": "16:30",
-      "end": "21:15",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "7",
-      "teacher": "eКонф. Л доц. д-р",
-      "group": "О. Панагиев",
-      "groupTokens": [
-        "О. Панагиев"
-      ],
-      "groupParents": [
-        "О. Панагиев"
-      ],
-      "room": "202"
+      "room": "4130Б"
     },
     {
       "id": 157,
-      "week": 10,
-      "date": "2026-12-12",
-      "day": "Сб",
+      "week": 9,
+      "date": "2026-11-30",
+      "day": "Пн",
       "start": "16:30",
       "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ инж. Д. Иванов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "202А"
-    },
-    {
-      "id": 41,
-      "week": 11,
-      "date": "2026-12-14",
-      "day": "Пн",
-      "start": "2101В/4130А****",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. А. Ангелов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "202А"
-    },
-    {
-      "id": 144,
-      "week": 11,
-      "date": "2026-12-14",
-      "day": "Пн",
-      "start": "3507",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. инж.",
-      "group": "И. Христов",
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201В",
       "groupTokens": [
-        "И. Христов"
+        "201В"
       ],
       "groupParents": [
-        "И. Христов"
+        "201"
       ],
-      "room": "201В"
+      "room": "3609"
     },
     {
-      "id": 132,
+      "id": 203,
+      "week": 9,
+      "date": "2026-11-30",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 250,
+      "week": 9,
+      "date": "2026-11-30",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "ЛУ",
+      "teacher": "ас. Ж. Русев",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "1511"
+    },
+    {
+      "id": 78,
+      "week": 9,
+      "date": "2026-12-01",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. Р. Йорданова",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "2101В"
+    },
+    {
+      "id": 118,
+      "week": 9,
+      "date": "2026-12-01",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 158,
+      "week": 9,
+      "date": "2026-12-01",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 204,
+      "week": 9,
+      "date": "2026-12-01",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 251,
+      "week": 9,
+      "date": "2026-12-01",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "ЛУ",
+      "teacher": "ас. Ж. Русев",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "1511"
+    },
+    {
+      "id": 79,
+      "week": 9,
+      "date": "2026-12-02",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. Р. Йорданова",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "2101В"
+    },
+    {
+      "id": 159,
+      "week": 9,
+      "date": "2026-12-02",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3507"
+    },
+    {
+      "id": 205,
+      "week": 9,
+      "date": "2026-12-02",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 252,
+      "week": 9,
+      "date": "2026-12-02",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "ЛУ",
+      "teacher": "ас. Ж. Русев",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "1511"
+    },
+    {
+      "id": 80,
+      "week": 9,
+      "date": "2026-12-03",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. Р. Йорданова",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "2101В"
+    },
+    {
+      "id": 119,
+      "week": 9,
+      "date": "2026-12-03",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 160,
+      "week": 9,
+      "date": "2026-12-03",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 206,
+      "week": 9,
+      "date": "2026-12-03",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 253,
+      "week": 9,
+      "date": "2026-12-03",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "ЛУ",
+      "teacher": "ас. Ж. Русев",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "1511"
+    },
+    {
+      "id": 81,
+      "week": 9,
+      "date": "2026-12-04",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. Р. Йорданова",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "2101В"
+    },
+    {
+      "id": 120,
+      "week": 9,
+      "date": "2026-12-04",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 161,
+      "week": 9,
+      "date": "2026-12-04",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 207,
+      "week": 9,
+      "date": "2026-12-04",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 254,
+      "week": 9,
+      "date": "2026-12-04",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "ЛУ",
+      "teacher": "ас. Ж. Русев",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "1511"
+    },
+    {
+      "id": 82,
+      "week": 9,
+      "date": "2026-12-05",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. Р. Йорданова",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "4130А"
+    },
+    {
+      "id": 121,
+      "week": 9,
+      "date": "2026-12-05",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "18:15",
+      "hours": 10,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 162,
+      "week": 9,
+      "date": "2026-12-05",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 208,
+      "week": 9,
+      "date": "2026-12-05",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 242,
+      "week": 9,
+      "date": "2026-12-05",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Панагиев",
+      "group": "202",
+      "groupTokens": [
+        "202"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 255,
+      "week": 9,
+      "date": "2026-12-05",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "ЛУ",
+      "teacher": "ас. Ж. Русев",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "1511"
+    },
+    {
+      "id": 83,
+      "week": 10,
+      "date": "2026-12-07",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "2101В"
+    },
+    {
+      "id": 122,
+      "week": 10,
+      "date": "2026-12-07",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 163,
+      "week": 10,
+      "date": "2026-12-07",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 180,
+      "week": 10,
+      "date": "2026-12-07",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 209,
+      "week": 10,
+      "date": "2026-12-07",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "ЛУ",
+      "teacher": "ас. инж. Ж. Русев",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 84,
+      "week": 10,
+      "date": "2026-12-09",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "2101В"
+    },
+    {
+      "id": 123,
+      "week": 10,
+      "date": "2026-12-09",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 164,
+      "week": 10,
+      "date": "2026-12-09",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3507"
+    },
+    {
+      "id": 181,
+      "week": 10,
+      "date": "2026-12-09",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 210,
+      "week": 10,
+      "date": "2026-12-09",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "ЛУ",
+      "teacher": "ас. инж. Ж. Русев",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 85,
+      "week": 10,
+      "date": "2026-12-10",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "2101В"
+    },
+    {
+      "id": 124,
+      "week": 10,
+      "date": "2026-12-10",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 165,
+      "week": 10,
+      "date": "2026-12-10",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 182,
+      "week": 10,
+      "date": "2026-12-10",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 211,
+      "week": 10,
+      "date": "2026-12-10",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "ЛУ",
+      "teacher": "ас. инж. Ж. Русев",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 86,
+      "week": 10,
+      "date": "2026-12-11",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "2101В"
+    },
+    {
+      "id": 125,
+      "week": 10,
+      "date": "2026-12-11",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 166,
+      "week": 10,
+      "date": "2026-12-11",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 183,
+      "week": 10,
+      "date": "2026-12-11",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 212,
+      "week": 10,
+      "date": "2026-12-11",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "ЛУ",
+      "teacher": "ас. инж. Ж. Русев",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 87,
+      "week": 10,
+      "date": "2026-12-12",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "18:15",
+      "hours": 10,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "4130А"
+    },
+    {
+      "id": 126,
+      "week": 10,
+      "date": "2026-12-12",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "18:15",
+      "hours": 10,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 167,
+      "week": 10,
+      "date": "2026-12-12",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "18:15",
+      "hours": 10,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 184,
+      "week": 10,
+      "date": "2026-12-12",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "18:15",
+      "hours": 10,
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 213,
+      "week": 10,
+      "date": "2026-12-12",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "18:15",
+      "hours": 10,
+      "no": "6",
+      "subject": "АПеКеС",
+      "type": "ЛУ",
+      "teacher": "ас. инж. Ж. Русев",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 88,
       "week": 11,
       "date": "2026-12-14",
       "day": "Пн",
-      "start": "3509",
-      "end": "NaN:NaN",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201А"
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. Р. Йорданова",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "2101В"
+    },
+    {
+      "id": 111,
+      "week": 11,
+      "date": "2026-12-14",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 168,
+      "week": 11,
+      "date": "2026-12-14",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 185,
+      "week": 11,
+      "date": "2026-12-14",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 244,
+      "week": 11,
+      "date": "2026-12-14",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 89,
+      "week": 11,
+      "date": "2026-12-15",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. Р. Йорданова",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "2101В"
+    },
+    {
+      "id": 112,
+      "week": 11,
+      "date": "2026-12-15",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 169,
+      "week": 11,
+      "date": "2026-12-15",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 186,
+      "week": 11,
+      "date": "2026-12-15",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 245,
+      "week": 11,
+      "date": "2026-12-15",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
     },
     {
       "id": 90,
       "week": 11,
-      "date": "2026-12-14",
-      "day": "Пн",
-      "start": "3609",
-      "end": "NaN:NaN",
+      "date": "2026-12-16",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. Р. Йорданова",
+      "group": "201В",
       "groupTokens": [
-        "В. Стоянова"
+        "201В"
       ],
       "groupParents": [
-        "В. Стоянова"
+        "201"
       ],
-      "room": "201Б"
+      "room": "2101В"
     },
     {
-      "id": 72,
+      "id": 113,
       "week": 11,
-      "date": "2026-12-14",
-      "day": "Пн",
-      "start": "4130Б",
-      "end": "NaN:NaN",
+      "date": "2026-12-16",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "201А",
       "groupTokens": [
-        "Миланов"
+        "201А"
       ],
       "groupParents": [
-        "Миланов"
+        "201"
       ],
-      "room": "202Б"
+      "room": "4130Б"
     },
     {
-      "id": 42,
+      "id": 170,
       "week": 11,
-      "date": "2026-12-15",
-      "day": "Вт",
-      "start": "2101В/4130А****",
-      "end": "NaN:NaN",
+      "date": "2026-12-16",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. А. Ангелов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "202А"
-    },
-    {
-      "id": 145,
-      "week": 11,
-      "date": "2026-12-15",
-      "day": "Вт",
-      "start": "3507",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. инж.",
-      "group": "И. Христов",
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "202Б",
       "groupTokens": [
-        "И. Христов"
+        "202Б"
       ],
       "groupParents": [
-        "И. Христов"
+        "202"
       ],
-      "room": "201В"
+      "room": "3507"
     },
     {
-      "id": 133,
+      "id": 187,
       "week": 11,
-      "date": "2026-12-15",
-      "day": "Вт",
-      "start": "3509",
-      "end": "NaN:NaN",
+      "date": "2026-12-16",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201А"
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 246,
+      "week": 11,
+      "date": "2026-12-16",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
     },
     {
       "id": 91,
       "week": 11,
-      "date": "2026-12-15",
-      "day": "Вт",
-      "start": "3609",
-      "end": "NaN:NaN",
+      "date": "2026-12-17",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. Р. Йорданова",
+      "group": "201В",
       "groupTokens": [
-        "В. Стоянова"
+        "201В"
       ],
       "groupParents": [
-        "В. Стоянова"
+        "201"
       ],
-      "room": "201Б"
+      "room": "2101В"
     },
     {
-      "id": 73,
+      "id": 114,
       "week": 11,
-      "date": "2026-12-15",
-      "day": "Вт",
-      "start": "4130Б",
-      "end": "NaN:NaN",
+      "date": "2026-12-17",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "201А",
       "groupTokens": [
-        "Миланов"
+        "201А"
       ],
       "groupParents": [
-        "Миланов"
+        "201"
       ],
-      "room": "202Б"
+      "room": "4130Б"
     },
     {
-      "id": 43,
+      "id": 171,
       "week": 11,
-      "date": "2026-12-16",
-      "day": "Ср",
-      "start": "2101В/4130А****",
-      "end": "NaN:NaN",
+      "date": "2026-12-17",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. А. Ангелов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "202А"
-    },
-    {
-      "id": 146,
-      "week": 11,
-      "date": "2026-12-16",
-      "day": "Ср",
-      "start": "3507",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. инж.",
-      "group": "И. Христов",
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "202Б",
       "groupTokens": [
-        "И. Христов"
+        "202Б"
       ],
       "groupParents": [
-        "И. Христов"
+        "202"
       ],
-      "room": "201В"
+      "room": "3609"
     },
     {
-      "id": 134,
+      "id": 188,
       "week": 11,
-      "date": "2026-12-16",
-      "day": "Ср",
-      "start": "3509",
-      "end": "NaN:NaN",
+      "date": "2026-12-17",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201А"
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 247,
+      "week": 11,
+      "date": "2026-12-17",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
     },
     {
       "id": 92,
       "week": 11,
-      "date": "2026-12-16",
-      "day": "Ср",
-      "start": "3609",
-      "end": "NaN:NaN",
+      "date": "2026-12-18",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. Р. Йорданова",
+      "group": "201В",
       "groupTokens": [
-        "В. Стоянова"
+        "201В"
       ],
       "groupParents": [
-        "В. Стоянова"
+        "201"
       ],
-      "room": "201Б"
+      "room": "2101В"
     },
     {
-      "id": 74,
+      "id": 115,
       "week": 11,
-      "date": "2026-12-16",
-      "day": "Ср",
-      "start": "4130Б",
-      "end": "NaN:NaN",
+      "date": "2026-12-18",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "201А",
       "groupTokens": [
-        "Миланов"
+        "201А"
       ],
       "groupParents": [
-        "Миланов"
+        "201"
       ],
-      "room": "202Б"
+      "room": "4130Б"
     },
     {
-      "id": 44,
+      "id": 172,
       "week": 11,
-      "date": "2026-12-17",
-      "day": "Чт",
-      "start": "2101В/4130А****",
-      "end": "NaN:NaN",
+      "date": "2026-12-18",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. А. Ангелов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "202А"
-    },
-    {
-      "id": 147,
-      "week": 11,
-      "date": "2026-12-17",
-      "day": "Чт",
-      "start": "3507",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. инж.",
-      "group": "И. Христов",
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "202Б",
       "groupTokens": [
-        "И. Христов"
+        "202Б"
       ],
       "groupParents": [
-        "И. Христов"
+        "202"
       ],
-      "room": "201В"
+      "room": "3609"
     },
     {
-      "id": 135,
+      "id": 189,
       "week": 11,
-      "date": "2026-12-17",
-      "day": "Чт",
-      "start": "3509",
-      "end": "NaN:NaN",
+      "date": "2026-12-18",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201А"
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 248,
+      "week": 11,
+      "date": "2026-12-18",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
     },
     {
       "id": 93,
       "week": 11,
-      "date": "2026-12-17",
-      "day": "Чт",
-      "start": "3609",
-      "end": "NaN:NaN",
+      "date": "2026-12-19",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. Р. Йорданова",
+      "group": "201В",
       "groupTokens": [
-        "В. Стоянова"
+        "201В"
       ],
       "groupParents": [
-        "В. Стоянова"
+        "201"
       ],
-      "room": "201Б"
+      "room": "4130А"
     },
     {
-      "id": 75,
+      "id": 116,
       "week": 11,
-      "date": "2026-12-17",
-      "day": "Чт",
-      "start": "4130Б",
-      "end": "NaN:NaN",
+      "date": "2026-12-19",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "201А",
       "groupTokens": [
-        "Миланов"
+        "201А"
       ],
       "groupParents": [
-        "Миланов"
+        "201"
       ],
-      "room": "202Б"
+      "room": "4130Б"
     },
     {
-      "id": 45,
+      "id": 173,
       "week": 11,
-      "date": "2026-12-18",
-      "day": "Пт",
-      "start": "2101В/4130А****",
-      "end": "NaN:NaN",
+      "date": "2026-12-19",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. А. Ангелов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "202А"
-    },
-    {
-      "id": 148,
-      "week": 11,
-      "date": "2026-12-18",
-      "day": "Пт",
-      "start": "3507",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. инж.",
-      "group": "И. Христов",
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "202Б",
       "groupTokens": [
-        "И. Христов"
+        "202Б"
       ],
       "groupParents": [
-        "И. Христов"
+        "202"
       ],
-      "room": "201В"
+      "room": "3609"
     },
     {
-      "id": 136,
+      "id": 190,
       "week": 11,
-      "date": "2026-12-18",
-      "day": "Пт",
-      "start": "3509",
-      "end": "NaN:NaN",
+      "date": "2026-12-19",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201А"
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 218,
+      "week": 11,
+      "date": "2026-12-19",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3401"
+    },
+    {
+      "id": 243,
+      "week": 11,
+      "date": "2026-12-19",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Панагиев",
+      "group": "202",
+      "groupTokens": [
+        "202"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 249,
+      "week": 11,
+      "date": "2026-12-19",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "eКонф.",
+      "type": "ЛУ",
+      "teacher": "инж. Д. Иванов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
     },
     {
       "id": 94,
-      "week": 11,
-      "date": "2026-12-18",
-      "day": "Пт",
-      "start": "3609",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
-      "groupTokens": [
-        "В. Стоянова"
-      ],
-      "groupParents": [
-        "В. Стоянова"
-      ],
-      "room": "201Б"
-    },
-    {
-      "id": 76,
-      "week": 11,
-      "date": "2026-12-18",
-      "day": "Пт",
-      "start": "4130Б",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
-      "groupTokens": [
-        "Миланов"
-      ],
-      "groupParents": [
-        "Миланов"
-      ],
-      "room": "202Б"
-    },
-    {
-      "id": 46,
-      "week": 11,
-      "date": "2026-12-19",
-      "day": "Сб",
+      "week": 12,
+      "date": "2027-01-04",
+      "day": "Пн",
       "start": "16:30",
       "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. А. Ангелов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "202А"
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "2101В"
     },
     {
-      "id": 77,
-      "week": 11,
-      "date": "2026-12-19",
-      "day": "Сб",
+      "id": 133,
+      "week": 12,
+      "date": "2027-01-04",
+      "day": "Пн",
       "start": "16:30",
       "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "202Б",
       "groupTokens": [
-        "Миланов"
+        "202Б"
       ],
       "groupParents": [
-        "Миланов"
+        "202"
       ],
-      "room": "202Б"
+      "room": "4130Б"
+    },
+    {
+      "id": 151,
+      "week": 12,
+      "date": "2027-01-04",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 220,
+      "week": 12,
+      "date": "2027-01-04",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 232,
+      "week": 12,
+      "date": "2027-01-04",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. инж. И. Христов",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3507"
     },
     {
       "id": 95,
-      "week": 11,
-      "date": "2026-12-19",
-      "day": "Сб",
+      "week": 12,
+      "date": "2027-01-05",
+      "day": "Вт",
       "start": "16:30",
       "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "202А",
       "groupTokens": [
-        "В. Стоянова"
+        "202А"
       ],
       "groupParents": [
-        "В. Стоянова"
+        "202"
       ],
-      "room": "201Б"
+      "room": "2101В"
+    },
+    {
+      "id": 134,
+      "week": 12,
+      "date": "2027-01-05",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 152,
+      "week": 12,
+      "date": "2027-01-05",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 221,
+      "week": 12,
+      "date": "2027-01-05",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 233,
+      "week": 12,
+      "date": "2027-01-05",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. инж. И. Христов",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3507"
+    },
+    {
+      "id": 96,
+      "week": 12,
+      "date": "2027-01-06",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "2101В"
+    },
+    {
+      "id": 135,
+      "week": 12,
+      "date": "2027-01-06",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 153,
+      "week": 12,
+      "date": "2027-01-06",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 222,
+      "week": 12,
+      "date": "2027-01-06",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 234,
+      "week": 12,
+      "date": "2027-01-06",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. инж. И. Христов",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3507"
+    },
+    {
+      "id": 97,
+      "week": 12,
+      "date": "2027-01-07",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "2101В"
+    },
+    {
+      "id": 136,
+      "week": 12,
+      "date": "2027-01-07",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 154,
+      "week": 12,
+      "date": "2027-01-07",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 223,
+      "week": 12,
+      "date": "2027-01-07",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 235,
+      "week": 12,
+      "date": "2027-01-07",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. инж. И. Христов",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3507"
+    },
+    {
+      "id": 98,
+      "week": 12,
+      "date": "2027-01-08",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "2101В"
     },
     {
       "id": 137,
-      "week": 11,
-      "date": "2026-12-19",
-      "day": "Сб",
+      "week": 12,
+      "date": "2027-01-08",
+      "day": "Пт",
       "start": "16:30",
       "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201А"
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "4130Б"
     },
     {
-      "id": 149,
-      "week": 11,
-      "date": "2026-12-19",
-      "day": "Сб",
+      "id": 155,
+      "week": 12,
+      "date": "2027-01-08",
+      "day": "Пт",
       "start": "16:30",
       "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. инж.",
-      "group": "И. Христов",
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201Б",
       "groupTokens": [
-        "И. Христов"
+        "201Б"
       ],
       "groupParents": [
-        "И. Христов"
+        "201"
       ],
-      "room": "201В"
+      "room": "3609"
     },
     {
-      "id": 47,
+      "id": 224,
       "week": 12,
-      "date": "2027-01-04",
-      "day": "Пн",
-      "start": "2101В/4130А****",
-      "end": "NaN:NaN",
+      "date": "2027-01-08",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. А. Ангелов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "202Б"
-    },
-    {
-      "id": 164,
-      "week": 12,
-      "date": "2027-01-04",
-      "day": "Пн",
-      "start": "3429",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "Л доц. д-р",
-      "group": "О. Маринов",
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
       "groupTokens": [
-        "О. Маринов"
+        "201А"
       ],
       "groupParents": [
-        "О. Маринов"
+        "201"
       ],
-      "room": "202"
+      "room": "3509"
     },
     {
-      "id": 114,
+      "id": 236,
       "week": 12,
-      "date": "2027-01-04",
-      "day": "Пн",
-      "start": "3509",
-      "end": "NaN:NaN",
+      "date": "2027-01-08",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. И. Христов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201В"
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. инж. И. Христов",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3507"
+    },
+    {
+      "id": 99,
+      "week": 12,
+      "date": "2027-01-09",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "4130А"
     },
     {
       "id": 138,
       "week": 12,
-      "date": "2027-01-04",
-      "day": "Пн",
-      "start": "3509",
-      "end": "NaN:NaN",
+      "date": "2027-01-09",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201Б"
-    },
-    {
-      "id": 158,
-      "week": 12,
-      "date": "2027-01-04",
-      "day": "Пн",
-      "start": "3534",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "8",
-      "teacher": "КП Л проф. д.ик.н.",
-      "group": "К. Ангелов",
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "202Б",
       "groupTokens": [
-        "К. Ангелов"
+        "202Б"
       ],
       "groupParents": [
-        "К. Ангелов"
+        "202"
       ],
-      "room": "201"
+      "room": "4130Б"
     },
     {
-      "id": 84,
-      "week": 12,
-      "date": "2027-01-04",
-      "day": "Пн",
-      "start": "3609",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
-      "groupTokens": [
-        "В. Стоянова"
-      ],
-      "groupParents": [
-        "В. Стоянова"
-      ],
-      "room": "201А"
-    },
-    {
-      "id": 66,
-      "week": 12,
-      "date": "2027-01-04",
-      "day": "Пн",
-      "start": "4130Б",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
-      "groupTokens": [
-        "Миланов"
-      ],
-      "groupParents": [
-        "Миланов"
-      ],
-      "room": "202А"
-    },
-    {
-      "id": 48,
-      "week": 12,
-      "date": "2027-01-05",
-      "day": "Вт",
-      "start": "2101В/4130А****",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. А. Ангелов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "202Б"
-    },
-    {
-      "id": 165,
-      "week": 12,
-      "date": "2027-01-05",
-      "day": "Вт",
-      "start": "3429",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "Л доц. д-р",
-      "group": "О. Маринов",
-      "groupTokens": [
-        "О. Маринов"
-      ],
-      "groupParents": [
-        "О. Маринов"
-      ],
-      "room": "202"
-    },
-    {
-      "id": 115,
-      "week": 12,
-      "date": "2027-01-05",
-      "day": "Вт",
-      "start": "3509",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. И. Христов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201В"
-    },
-    {
-      "id": 139,
-      "week": 12,
-      "date": "2027-01-05",
-      "day": "Вт",
-      "start": "3509",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201Б"
-    },
-    {
-      "id": 159,
-      "week": 12,
-      "date": "2027-01-05",
-      "day": "Вт",
-      "start": "3534",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "8",
-      "teacher": "КП Л проф. д.ик.н.",
-      "group": "К. Ангелов",
-      "groupTokens": [
-        "К. Ангелов"
-      ],
-      "groupParents": [
-        "К. Ангелов"
-      ],
-      "room": "201"
-    },
-    {
-      "id": 85,
-      "week": 12,
-      "date": "2027-01-05",
-      "day": "Вт",
-      "start": "3609",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
-      "groupTokens": [
-        "В. Стоянова"
-      ],
-      "groupParents": [
-        "В. Стоянова"
-      ],
-      "room": "201А"
-    },
-    {
-      "id": 67,
-      "week": 12,
-      "date": "2027-01-05",
-      "day": "Вт",
-      "start": "4130Б",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
-      "groupTokens": [
-        "Миланов"
-      ],
-      "groupParents": [
-        "Миланов"
-      ],
-      "room": "202А"
-    },
-    {
-      "id": 49,
-      "week": 12,
-      "date": "2027-01-06",
-      "day": "Ср",
-      "start": "2101В/4130А****",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. А. Ангелов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "202Б"
-    },
-    {
-      "id": 166,
-      "week": 12,
-      "date": "2027-01-06",
-      "day": "Ср",
-      "start": "3429",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "Л доц. д-р",
-      "group": "О. Маринов",
-      "groupTokens": [
-        "О. Маринов"
-      ],
-      "groupParents": [
-        "О. Маринов"
-      ],
-      "room": "202"
-    },
-    {
-      "id": 116,
-      "week": 12,
-      "date": "2027-01-06",
-      "day": "Ср",
-      "start": "3509",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. И. Христов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201В"
-    },
-    {
-      "id": 140,
-      "week": 12,
-      "date": "2027-01-06",
-      "day": "Ср",
-      "start": "3509",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201Б"
-    },
-    {
-      "id": 160,
-      "week": 12,
-      "date": "2027-01-06",
-      "day": "Ср",
-      "start": "3534",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "8",
-      "teacher": "КП Л проф. д.ик.н.",
-      "group": "К. Ангелов",
-      "groupTokens": [
-        "К. Ангелов"
-      ],
-      "groupParents": [
-        "К. Ангелов"
-      ],
-      "room": "201"
-    },
-    {
-      "id": 86,
-      "week": 12,
-      "date": "2027-01-06",
-      "day": "Ср",
-      "start": "3609",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
-      "groupTokens": [
-        "В. Стоянова"
-      ],
-      "groupParents": [
-        "В. Стоянова"
-      ],
-      "room": "201А"
-    },
-    {
-      "id": 68,
-      "week": 12,
-      "date": "2027-01-06",
-      "day": "Ср",
-      "start": "4130Б",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
-      "groupTokens": [
-        "Миланов"
-      ],
-      "groupParents": [
-        "Миланов"
-      ],
-      "room": "202А"
-    },
-    {
-      "id": 50,
-      "week": 12,
-      "date": "2027-01-07",
-      "day": "Чт",
-      "start": "2101В/4130А****",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. А. Ангелов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "202Б"
-    },
-    {
-      "id": 167,
-      "week": 12,
-      "date": "2027-01-07",
-      "day": "Чт",
-      "start": "3429",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "Л доц. д-р",
-      "group": "О. Маринов",
-      "groupTokens": [
-        "О. Маринов"
-      ],
-      "groupParents": [
-        "О. Маринов"
-      ],
-      "room": "202"
-    },
-    {
-      "id": 117,
-      "week": 12,
-      "date": "2027-01-07",
-      "day": "Чт",
-      "start": "3509",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. И. Христов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201В"
-    },
-    {
-      "id": 141,
-      "week": 12,
-      "date": "2027-01-07",
-      "day": "Чт",
-      "start": "3509",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201Б"
-    },
-    {
-      "id": 161,
-      "week": 12,
-      "date": "2027-01-07",
-      "day": "Чт",
-      "start": "3534",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "8",
-      "teacher": "КП Л проф. д.ик.н.",
-      "group": "К. Ангелов",
-      "groupTokens": [
-        "К. Ангелов"
-      ],
-      "groupParents": [
-        "К. Ангелов"
-      ],
-      "room": "201"
-    },
-    {
-      "id": 87,
-      "week": 12,
-      "date": "2027-01-07",
-      "day": "Чт",
-      "start": "3609",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
-      "groupTokens": [
-        "В. Стоянова"
-      ],
-      "groupParents": [
-        "В. Стоянова"
-      ],
-      "room": "201А"
-    },
-    {
-      "id": 69,
-      "week": 12,
-      "date": "2027-01-07",
-      "day": "Чт",
-      "start": "4130Б",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
-      "groupTokens": [
-        "Миланов"
-      ],
-      "groupParents": [
-        "Миланов"
-      ],
-      "room": "202А"
-    },
-    {
-      "id": 51,
-      "week": 12,
-      "date": "2027-01-08",
-      "day": "Пт",
-      "start": "2101В/4130А****",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. А. Ангелов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "202Б"
-    },
-    {
-      "id": 168,
-      "week": 12,
-      "date": "2027-01-08",
-      "day": "Пт",
-      "start": "3429",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "Л доц. д-р",
-      "group": "О. Маринов",
-      "groupTokens": [
-        "О. Маринов"
-      ],
-      "groupParents": [
-        "О. Маринов"
-      ],
-      "room": "202"
-    },
-    {
-      "id": 118,
-      "week": 12,
-      "date": "2027-01-08",
-      "day": "Пт",
-      "start": "3509",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. И. Христов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201В"
-    },
-    {
-      "id": 142,
-      "week": 12,
-      "date": "2027-01-08",
-      "day": "Пт",
-      "start": "3509",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201Б"
-    },
-    {
-      "id": 162,
-      "week": 12,
-      "date": "2027-01-08",
-      "day": "Пт",
-      "start": "3534",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "8",
-      "teacher": "КП Л проф. д.ик.н.",
-      "group": "К. Ангелов",
-      "groupTokens": [
-        "К. Ангелов"
-      ],
-      "groupParents": [
-        "К. Ангелов"
-      ],
-      "room": "201"
-    },
-    {
-      "id": 88,
-      "week": 12,
-      "date": "2027-01-08",
-      "day": "Пт",
-      "start": "3609",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
-      "groupTokens": [
-        "В. Стоянова"
-      ],
-      "groupParents": [
-        "В. Стоянова"
-      ],
-      "room": "201А"
-    },
-    {
-      "id": 70,
-      "week": 12,
-      "date": "2027-01-08",
-      "day": "Пт",
-      "start": "4130Б",
-      "end": "NaN:NaN",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
-      "groupTokens": [
-        "Миланов"
-      ],
-      "groupParents": [
-        "Миланов"
-      ],
-      "room": "202А"
-    },
-    {
-      "id": 163,
+      "id": 156,
       "week": 12,
       "date": "2027-01-09",
       "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 225,
+      "week": 12,
+      "date": "2027-01-09",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 237,
+      "week": 12,
+      "date": "2027-01-09",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. инж. И. Христов",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3507"
+    },
+    {
+      "id": 256,
+      "week": 13,
+      "date": "2027-01-11",
+      "day": "Пн",
       "start": "10:30",
       "end": "15:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "8",
-      "teacher": "КП Л проф. д.ик.н.",
-      "group": "К. Ангелов",
+      "no": "8",
+      "subject": "КП",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
       "groupTokens": [
-        "К. Ангелов"
+        "201"
       ],
       "groupParents": [
-        "К. Ангелов"
+        "201"
       ],
-      "room": "201"
+      "room": "3534"
     },
     {
-      "id": 169,
-      "week": 12,
-      "date": "2027-01-09",
-      "day": "Сб",
+      "id": 262,
+      "week": 13,
+      "date": "2027-01-11",
+      "day": "Пн",
       "start": "10:30",
       "end": "15:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "Л доц. д-р",
-      "group": "О. Маринов",
+      "no": "8",
+      "subject": "КП",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "202",
       "groupTokens": [
-        "О. Маринов"
+        "202"
       ],
       "groupParents": [
-        "О. Маринов"
+        "202"
       ],
-      "room": "202"
+      "room": "3429"
     },
     {
-      "id": 52,
-      "week": 12,
-      "date": "2027-01-09",
-      "day": "Сб",
+      "id": 100,
+      "week": 13,
+      "date": "2027-01-11",
+      "day": "Пн",
       "start": "16:30",
       "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. А. Ангелов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "202Б"
-    },
-    {
-      "id": 71,
-      "week": 12,
-      "date": "2027-01-09",
-      "day": "Сб",
-      "start": "16:30",
-      "end": "21:15",
-      "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ хон. ас. И.",
-      "group": "Миланов",
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "202Б",
       "groupTokens": [
-        "Миланов"
+        "202Б"
       ],
       "groupParents": [
-        "Миланов"
+        "202"
       ],
-      "room": "202А"
+      "room": "2101В"
     },
     {
-      "id": 89,
-      "week": 12,
-      "date": "2027-01-09",
-      "day": "Сб",
+      "id": 127,
+      "week": 13,
+      "date": "2027-01-11",
+      "day": "Пн",
       "start": "16:30",
       "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ доц. д-р",
-      "group": "В. Стоянова",
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "202А",
       "groupTokens": [
-        "В. Стоянова"
+        "202А"
       ],
       "groupParents": [
-        "В. Стоянова"
+        "202"
       ],
-      "room": "201А"
+      "room": "4130Б"
     },
     {
-      "id": 119,
-      "week": 12,
-      "date": "2027-01-09",
-      "day": "Сб",
+      "id": 145,
+      "week": 13,
+      "date": "2027-01-11",
+      "day": "Пн",
       "start": "16:30",
       "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. И. Христов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201В"
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 191,
+      "week": 13,
+      "date": "2027-01-11",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. И. Христов",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 226,
+      "week": 13,
+      "date": "2027-01-11",
+      "day": "Пн",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 257,
+      "week": 13,
+      "date": "2027-01-12",
+      "day": "Вт",
+      "start": "10:30",
+      "end": "15:15",
+      "hours": 5,
+      "no": "8",
+      "subject": "КП",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3534"
+    },
+    {
+      "id": 263,
+      "week": 13,
+      "date": "2027-01-12",
+      "day": "Вт",
+      "start": "10:30",
+      "end": "15:15",
+      "hours": 5,
+      "no": "8",
+      "subject": "КП",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "202",
+      "groupTokens": [
+        "202"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 101,
+      "week": 13,
+      "date": "2027-01-12",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "2101В"
+    },
+    {
+      "id": 128,
+      "week": 13,
+      "date": "2027-01-12",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 146,
+      "week": 13,
+      "date": "2027-01-12",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 192,
+      "week": 13,
+      "date": "2027-01-12",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. И. Христов",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 227,
+      "week": 13,
+      "date": "2027-01-12",
+      "day": "Вт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 258,
+      "week": 13,
+      "date": "2027-01-13",
+      "day": "Ср",
+      "start": "10:30",
+      "end": "15:15",
+      "hours": 5,
+      "no": "8",
+      "subject": "КП",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3534"
+    },
+    {
+      "id": 264,
+      "week": 13,
+      "date": "2027-01-13",
+      "day": "Ср",
+      "start": "10:30",
+      "end": "15:15",
+      "hours": 5,
+      "no": "8",
+      "subject": "КП",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "202",
+      "groupTokens": [
+        "202"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 102,
+      "week": 13,
+      "date": "2027-01-13",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "2101В"
+    },
+    {
+      "id": 129,
+      "week": 13,
+      "date": "2027-01-13",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 147,
+      "week": 13,
+      "date": "2027-01-13",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 193,
+      "week": 13,
+      "date": "2027-01-13",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. И. Христов",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 228,
+      "week": 13,
+      "date": "2027-01-13",
+      "day": "Ср",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 259,
+      "week": 13,
+      "date": "2027-01-14",
+      "day": "Чт",
+      "start": "10:30",
+      "end": "15:15",
+      "hours": 5,
+      "no": "8",
+      "subject": "КП",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3534"
+    },
+    {
+      "id": 265,
+      "week": 13,
+      "date": "2027-01-14",
+      "day": "Чт",
+      "start": "10:30",
+      "end": "15:15",
+      "hours": 5,
+      "no": "8",
+      "subject": "КП",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "202",
+      "groupTokens": [
+        "202"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 103,
+      "week": 13,
+      "date": "2027-01-14",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "2101В"
+    },
+    {
+      "id": 130,
+      "week": 13,
+      "date": "2027-01-14",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 148,
+      "week": 13,
+      "date": "2027-01-14",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 194,
+      "week": 13,
+      "date": "2027-01-14",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. И. Христов",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 229,
+      "week": 13,
+      "date": "2027-01-14",
+      "day": "Чт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 260,
+      "week": 13,
+      "date": "2027-01-15",
+      "day": "Пт",
+      "start": "10:30",
+      "end": "15:15",
+      "hours": 5,
+      "no": "8",
+      "subject": "КП",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3534"
+    },
+    {
+      "id": 266,
+      "week": 13,
+      "date": "2027-01-15",
+      "day": "Пт",
+      "start": "10:30",
+      "end": "15:15",
+      "hours": 5,
+      "no": "8",
+      "subject": "КП",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "202",
+      "groupTokens": [
+        "202"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
+    },
+    {
+      "id": 104,
+      "week": 13,
+      "date": "2027-01-15",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "2101В"
     },
     {
       "id": 131,
-      "week": 12,
-      "date": "2027-01-09",
-      "day": "Сб",
+      "week": 13,
+      "date": "2027-01-15",
+      "day": "Пт",
       "start": "16:30",
       "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "7 ИСУБ",
-      "teacher": "ERP Л проф. д.ик.н.",
-      "group": "К. Ангелов",
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "202А",
       "groupTokens": [
-        "К. Ангелов"
+        "202А"
       ],
       "groupParents": [
-        "К. Ангелов"
+        "202"
       ],
-      "room": "201"
+      "room": "4130Б"
     },
     {
-      "id": 143,
-      "week": 12,
-      "date": "2027-01-09",
-      "day": "Сб",
+      "id": 149,
+      "week": 13,
+      "date": "2027-01-15",
+      "day": "Пт",
       "start": "16:30",
       "end": "21:15",
       "hours": 5,
-      "no": "",
-      "subject": "",
-      "type": "",
-      "teacher": "ЛУ ас. П. Йосифов",
-      "group": "",
-      "groupTokens": [],
-      "groupParents": [],
-      "room": "201Б"
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 195,
+      "week": 13,
+      "date": "2027-01-15",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. И. Христов",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 230,
+      "week": 13,
+      "date": "2027-01-15",
+      "day": "Пт",
+      "start": "16:30",
+      "end": "21:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 105,
+      "week": 13,
+      "date": "2027-01-16",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "3",
+      "subject": "ГДТУП",
+      "type": "ЛУ",
+      "teacher": "ас. А. Ангелов",
+      "group": "202Б",
+      "groupTokens": [
+        "202Б"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "4130А"
+    },
+    {
+      "id": 132,
+      "week": 13,
+      "date": "2027-01-16",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "4",
+      "subject": "Б4.0",
+      "type": "ЛУ",
+      "teacher": "хон. ас. И. Миланов",
+      "group": "202А",
+      "groupTokens": [
+        "202А"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "4130Б"
+    },
+    {
+      "id": 150,
+      "week": 13,
+      "date": "2027-01-16",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "5",
+      "subject": "УСП",
+      "type": "ЛУ",
+      "teacher": "доц. д-р В. Стоянова",
+      "group": "201А",
+      "groupTokens": [
+        "201А"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3609"
+    },
+    {
+      "id": 196,
+      "week": 13,
+      "date": "2027-01-16",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "6",
+      "subject": "ИТБМ",
+      "type": "ЛУ",
+      "teacher": "ас. И. Христов",
+      "group": "201В",
+      "groupTokens": [
+        "201В"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 219,
+      "week": 13,
+      "date": "2027-01-16",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3401"
+    },
+    {
+      "id": 231,
+      "week": 13,
+      "date": "2027-01-16",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "7",
+      "subject": "ИСУБ ERP",
+      "type": "ЛУ",
+      "teacher": "ас. П. Йосифов",
+      "group": "201Б",
+      "groupTokens": [
+        "201Б"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3509"
+    },
+    {
+      "id": 261,
+      "week": 13,
+      "date": "2027-01-16",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "8",
+      "subject": "КП",
+      "type": "Лекция",
+      "teacher": "проф. д.ик.н. К. Ангелов",
+      "group": "201",
+      "groupTokens": [
+        "201"
+      ],
+      "groupParents": [
+        "201"
+      ],
+      "room": "3534"
+    },
+    {
+      "id": 267,
+      "week": 13,
+      "date": "2027-01-16",
+      "day": "Сб",
+      "start": "8:30",
+      "end": "13:15",
+      "hours": 5,
+      "no": "8",
+      "subject": "КП",
+      "type": "Лекция",
+      "teacher": "доц. д-р О. Маринов",
+      "group": "202",
+      "groupTokens": [
+        "202"
+      ],
+      "groupParents": [
+        "202"
+      ],
+      "room": "3429"
     }
   ]
 }

@@ -49,23 +49,18 @@ function normalizeCode(s) {
 //   "* Лекции в понеделник: зала 3401; в останалите дни: 3501."
 //   "* лекциите в понеделник са в зала 3401."  (other days implied: the
 //   remaining room of the "3401/3501*" pair)
+// A room cell can also carry the note inline: "2101В/4130А-събота".
 const plainText = normalizeCode(execFileSync('pdftotext', [pdfPath, '-']).toString('utf8'));
 const DAY_NAME_BG = { 'понеделник': 'Пн', 'вторник': 'Вт', 'сряда': 'Ср', 'четвъртък': 'Чт', 'петък': 'Пт', 'събота': 'Сб' };
 const roomRules = {}; // asterisk-count -> { specialDay, specialRoom, otherRoom? }
 {
-  const footnoteRe = /(\*{1,4})\s*(?:Лекции(?:те)?|Лаб\.\s*(?:упражнения|упр\.))\s+(?:в|във)\s+(понеделник|вторник|сряда|четвъртък|петък|събота)(?:\s+са\s+в)?[:\s]+(?:(?:зала|з\.)\s*)?([^\s;]*[^\s;.])(?:\s*;\s*в\s+останалите\s+дни:\s*([^\s;]*[^\s;.]))?/giu;
+  const footnoteRe = /(\*+)\s*(?:Лекции(?:те)?|Лаб\.\s*(?:упражнения|упр\.))\s+(?:в|във)\s+(понеделник|вторник|сряда|четвъртък|петък|събота)(?:\s+са\s+в)?[:\s]+(?:(?:зала|з\.)\s*)?([^\s;]*[^\s;.])(?:\s*;\s*в\s+останалите\s+дни:\s*([^\s;]*[^\s;.]))?/giu;
   let fm;
   while ((fm = footnoteRe.exec(plainText))) {
     roomRules[fm[1].length] = { specialDay: DAY_NAME_BG[fm[2].toLowerCase()], specialRoom: fm[3], otherRoom: fm[4] };
   }
 }
-function resolveRoom(rawRoom, day) {
-  if (!rawRoom) return rawRoom;
-  const starMatch = rawRoom.match(/(\*{1,4})\s*$/);
-  if (!starMatch) return rawRoom;
-  const rule = roomRules[starMatch[1].length];
-  const base = rawRoom.slice(0, starMatch.index).trim();
-  if (!rule) return base; // unknown footnote marker — at least drop the stray asterisks
+function pickRoom(base, rule, day) {
   const tokens = base.split('/').map(s => s.trim());
   if (!tokens.includes(rule.specialRoom)) return base;
   let otherRoom = rule.otherRoom;
@@ -76,6 +71,20 @@ function resolveRoom(rawRoom, day) {
   }
   if (!tokens.includes(otherRoom)) return base;
   return day === rule.specialDay ? rule.specialRoom : otherRoom;
+}
+function resolveRoom(rawRoom, day) {
+  if (!rawRoom) return rawRoom;
+  const inline = rawRoom.match(/^(.*\/)?([^/]+?)\s*-\s*(понеделник|вторник|сряда|четвъртък|петък|събота)$/i);
+  if (inline) {
+    const special = inline[2].trim();
+    return pickRoom((inline[1] || '') + special, { specialDay: DAY_NAME_BG[inline[3].toLowerCase()], specialRoom: special }, day);
+  }
+  const starMatch = rawRoom.match(/(\*+)\s*$/);
+  if (!starMatch) return rawRoom;
+  const rule = roomRules[starMatch[1].length];
+  const base = rawRoom.slice(0, starMatch.index).trim();
+  if (!rule) return base; // unknown footnote marker — at least drop the stray asterisks
+  return pickRoom(base, rule, day);
 }
 
 const wordRe = /<word xMin="([\d.]+)" yMin="([\d.]+)" xMax="([\d.]+)" yMax="([\d.]+)">([^<]*)<\/word>/g;
@@ -91,59 +100,93 @@ while ((m = wordRe.exec(xml))) {
 }
 
 // ---------- 2. Reconstruct the table grid ----------
-// Column boundaries were calibrated against the rendered PDF (see
-// docs/parsing-notes.md): header label x-positions sit ~27-28pt right of
-// the true grid line for the week columns, so week boundaries are derived
-// from the observed uniform 118.375pt column pitch instead of the header
-// text position.
+// The PDF's layout (margins, column widths, font size) has changed between
+// versions, so nothing here relies on fixed coordinates:
+//  * week columns are located from the centred "СЕДМИЦА N" header labels;
+//  * each table row is anchored on its start-time words ("16:30", "8:30");
+//  * the left-hand cells are told apart by content and order: № and
+//    discipline, then the type (Л/ЛУ/Лекция), teacher, group, room, and the
+//    weekday/Saturday start times.
 
-const weekBase = 1161.9, weekStep = 118.375; // boundary between week3/week4, and column pitch
-const weekLeft = {};
-for (let n = 1; n <= 13; n++) weekLeft['w' + n] = weekBase + (n - 4) * weekStep;
-const weekEnd = weekBase + 10 * weekStep;
+const TIME_RE = /^\d{1,2}:\d{2}$/;
+const GROUP_RE = /^\d{3}[A-Za-zА-Яа-я]?(?:\/\d{3}[A-Za-zА-Яа-я]?)*$/;
+const TYPE_RE = /^(?:Л|ЛУ|Лекция|Лаб\.?|Упр\.?|СУ|Семинар)$/;
 
-const colStarts = [
-  ['no', 36], ['subject', 70], ['type', 140], ['teacher', 199],
-  ['group', 365], ['room', 497], ['weekday_start', 626], ['saturday_start', 720.6],
-  ...Array.from({ length: 13 }, (_, i) => [`w${i + 1}`, weekLeft[`w${i + 1}`]]),
-  ['__end', weekEnd],
-];
-const metaCols = ['no', 'subject', 'type', 'teacher', 'group', 'room', 'weekday_start', 'saturday_start'];
-
-function colOf(x) {
-  for (let i = 0; i < colStarts.length - 1; i++) {
-    if (x >= colStarts[i][1] && x < colStarts[i + 1][1]) return colStarts[i][0];
-  }
-  return '__end';
+function layoutError(msg) {
+  return new Error(msg + ' — PDF layout may have changed, parser needs review.');
 }
 
-const body = words.filter(w => w.y0 > 170 && w.y0 < 1551);
+const weekHeaders = words.filter(w => w.text === 'СЕДМИЦА').sort((a, b) => a.x0 - b.x0);
+if (weekHeaders.length !== 13) throw layoutError(`Found ${weekHeaders.length} "СЕДМИЦА" headers instead of 13`);
+const weekCenters = weekHeaders.map(h => {
+  const num = words.find(w => /^\d+$/.test(w.text) && Math.abs(w.y0 - h.y0) < 2 && w.x0 > h.x1 && w.x0 - h.x1 < 15);
+  return (h.x0 + (num ? num.x1 : h.x1)) / 2;
+});
+const weekPitch = (weekCenters[12] - weekCenters[0]) / 12;
+const weekLeft = weekCenters.map((c, i) => (i === 0 ? c - weekPitch / 2 : (weekCenters[i - 1] + c) / 2));
+const weekEnd = weekCenters[12] + weekPitch / 2;
+const metaRight = weekLeft[0];
 
-const anchorWords = body.filter(w => colOf(w.x0) === 'weekday_start').sort((a, b) => a.y0 - b.y0);
-if (anchorWords.length < 10) {
-  throw new Error(`Only found ${anchorWords.length} table rows — PDF layout may have changed, parser needs review.`);
+function weekColOf(x) {
+  for (let i = 12; i >= 0; i--) if (x >= weekLeft[i]) return x < weekEnd ? 'w' + (i + 1) : '__end';
+  return null;
 }
+const colOf = weekColOf;
+
+// Body = everything between the header row and the footnotes.
+const headerBottom = Math.max(
+  ...weekHeaders.map(h => h.y1),
+  ...words.filter(w => w.text === 'начало' && w.y0 < weekHeaders[0].y1 + 40).map(w => w.y1),
+);
+const footnoteTitle = words.find(w => w.text === 'ПРОМЕНИ' && w.y0 > headerBottom);
+const bodyEnd = footnoteTitle ? footnoteTitle.y0 : Infinity;
+const body = words.filter(w => w.y0 > headerBottom && w.y0 < bodyEnd);
+
+// One anchor per table row: the leftmost start-time word on each line.
+const timeWords = body.filter(w => w.x1 <= metaRight && TIME_RE.test(w.text)).sort((a, b) => a.y0 - b.y0 || a.x0 - b.x0);
+const anchorWords = [];
+for (const w of timeWords) {
+  const last = anchorWords[anchorWords.length - 1];
+  if (last && Math.abs(last.y0 - w.y0) < 4) continue;
+  anchorWords.push(w);
+}
+if (anchorWords.length < 10) throw layoutError(`Only found ${anchorWords.length} table rows`);
 
 const rowBands = anchorWords.map((a, i) => {
   const prev = anchorWords[i - 1], next = anchorWords[i + 1];
   const top = prev ? (prev.y0 + a.y0) / 2 : a.y0 - 20;
   const bottom = next ? (a.y0 + next.y0) / 2 : a.y0 + 20;
-  return { y0: a.y0, top, bottom, meta: {}, weekWords: [] };
+  return { y0: a.y0, top, bottom, metaWords: [], weekWords: [] };
 });
 function bandFor(y0) { return rowBands.find(r => y0 >= r.top && y0 < r.bottom); }
 
 for (const w of body) {
-  const col = colOf(w.x0);
-  if (!metaCols.includes(col)) continue;
+  if (w.x0 >= metaRight) continue;
   const band = bandFor(w.y0);
-  if (!band) continue;
-  (band.meta[col] = band.meta[col] || []).push(w);
+  if (band) band.metaWords.push(w);
 }
+const readingOrder = (a, b) => (Math.abs(a.y0 - b.y0) < 4 ? a.x0 - b.x0 : a.y0 - b.y0);
+const joinWords = ws => [...ws].sort(readingOrder).map(w => w.text).join(' ');
 for (const band of rowBands) {
-  for (const col of metaCols) {
-    const ws = (band.meta[col] || []).sort((a, b) => a.y0 - b.y0 || a.x0 - b.x0);
-    band.meta[col] = ws.map(w => w.text).join(' ');
+  const ws = band.metaWords;
+  const times = ws.filter(w => TIME_RE.test(w.text)).sort((a, b) => a.x0 - b.x0);
+  const groupW = ws.filter(w => GROUP_RE.test(w.text) && w.x1 <= times[0].x0).sort((a, b) => a.x0 - b.x0)[0];
+  const typeW = ws.filter(w => TYPE_RE.test(w.text) && (!groupW || w.x1 <= groupW.x0)).sort((a, b) => a.x0 - b.x0)[0];
+  if (!groupW || !typeW) {
+    throw layoutError(`Could not find the group/type cells of the row "${joinWords(ws)}"`);
   }
+  const left = ws.filter(w => w.x1 <= typeW.x0);
+  const noW = left.filter(w => /^\d+$/.test(w.text)).sort((a, b) => a.x0 - b.x0)[0];
+  band.meta = {
+    no: noW ? noW.text : '',
+    subject: joinWords(left.filter(w => w !== noW)),
+    type: typeW.text,
+    teacher: joinWords(ws.filter(w => w.x0 >= typeW.x1 && w.x1 <= groupW.x0)),
+    group: groupW.text,
+    room: joinWords(ws.filter(w => w.x0 >= groupW.x1 && w.x1 <= times[0].x0)).replace(/\s*\/\s*/g, '/'),
+    weekday_start: times[0] ? times[0].text : '',
+    saturday_start: times[1] ? times[1].text : '',
+  };
 }
 
 for (const w of body) {
@@ -189,9 +232,10 @@ for (const band of rowBands) {
   for (const [col, pieces] of Object.entries(colText)) band.week[col] = pieces.join(' | ');
 }
 
+const TYPE_FULL = { 'Л': 'Лекция' }; // newer PDFs abbreviate "Лекция" to "Л"
 const rows = rowBands.map(band => {
-  const rec = {};
-  for (const c of metaCols) rec[c] = band.meta[c] || '';
+  const rec = { ...band.meta };
+  rec.type = TYPE_FULL[rec.type] || rec.type;
   rec.group = normalizeCode(rec.group);
   rec.room = normalizeCode(rec.room);
   for (let n = 1; n <= 13; n++) rec['w' + n] = (band.week && band.week['w' + n]) || '';
@@ -224,20 +268,19 @@ function addDays(isoDate, n) {
   d.setUTCDate(d.getUTCDate() + n);
   return d.toISOString().slice(0, 10);
 }
+// "Пн-Сб", "Пн, Вт, Пт", "Пн/Вт/Чт/Пт", and mixes such as "Пн, Ср-Пт".
 function expandDaySpec(spec) {
-  spec = spec.trim();
-  const rangeMatch = spec.match(/^(Пн|Вт|Ср|Чт|Пт|Сб)\s*[–-]\s*(Пн|Вт|Ср|Чт|Пт|Сб)$/);
-  if (rangeMatch) {
-    const a = DAY_OFFSET[rangeMatch[1]], b = DAY_OFFSET[rangeMatch[2]];
-    const out = [];
-    for (let i = a; i <= b; i++) out.push(DAY_NAMES[i]);
-    return out;
+  const out = [];
+  for (const part of spec.split(/[,/]/).map(s => s.trim()).filter(Boolean)) {
+    const rangeMatch = part.match(/^(Пн|Вт|Ср|Чт|Пт|Сб)\s*[–-]\s*(Пн|Вт|Ср|Чт|Пт|Сб)$/);
+    if (rangeMatch) {
+      const a = DAY_OFFSET[rangeMatch[1]], b = DAY_OFFSET[rangeMatch[2]];
+      for (let i = a; i <= b; i++) out.push(DAY_NAMES[i]);
+    } else if (DAY_OFFSET.hasOwnProperty(part)) {
+      out.push(part);
+    }
   }
-  if (spec.includes(',') || spec.includes('/')) {
-    return spec.split(/[,/]/).map(s => s.trim()).filter(Boolean);
-  }
-  if (DAY_OFFSET.hasOwnProperty(spec)) return [spec];
-  return [];
+  return out;
 }
 function parseWeekCell(text) {
   if (!text) return [];

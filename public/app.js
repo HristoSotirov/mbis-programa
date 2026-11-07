@@ -290,8 +290,31 @@
       navigator.serviceWorker.getRegistrations().then(regs => regs.forEach(r => r.unregister()));
       if (window.caches) caches.keys().then(keys => keys.forEach(k => caches.delete(k)));
     } else {
+      // Every deploy (new code or a new events.json) ships a new sw.js, which
+      // activates straight away (skipWaiting + clients.claim). Reload once
+      // when that happens so the page runs the new app.js/style.css/data
+      // instead of the copies it started with. Skipped on the very first
+      // install, when there was no previous worker to replace.
+      const hadController = !!navigator.serviceWorker.controller;
+      let reloading = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!hadController || reloading) return;
+        reloading = true;
+        location.reload();
+      });
+
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js').catch(() => { /* offline install not critical */ });
+        navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then(reg => {
+          // An installed app (home-screen icon) is usually resumed from the
+          // background rather than reopened, which never checks for a new
+          // version on its own. Check whenever it comes back to the
+          // foreground, and every 30 minutes while it stays open.
+          const checkForUpdate = () => reg.update().catch(() => { /* offline */ });
+          document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'visible') checkForUpdate();
+          });
+          setInterval(checkForUpdate, 30 * 60 * 1000);
+        }).catch(() => { /* offline install not critical */ });
       });
     }
   }
